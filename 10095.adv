@@ -2,7 +2,7 @@ ID: MGASA-2013-0163
 pubtime: 1370521473
 type: security
 src:
-  3:
+  2:
    core:
      - php-geshi-1.0.8.11-1.mga2
 CVE:
