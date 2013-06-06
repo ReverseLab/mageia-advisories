@@ -1,0 +1,20 @@
+ID: MGASA-2013-0161
+pubtime: 1370521473
+type: security
+src:
+  2:
+   core:
+     - krb5-1.9.2-2.6.mga2.src.rpm
+  3:
+   core:
+     - krb5-1.11.1-1.2.mga3.src.rpm
+CVE:
+  - CVE-2002-2443
+subject: Updated krb5 packages fix security vulnerability
+description: |
+  The kpasswd service provided by kadmind was vulnerable to a UDP
+  ping-pong attack (CVE-2002-2443).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2443
+ - https://bugzilla.redhat.com/show_bug.cgi?id=962531
+ - http://www.mandriva.com/en/support/security/advisories/mbs1/MDVSA-2013:166/
