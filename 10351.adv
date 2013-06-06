@@ -1,0 +1,21 @@
+ID: MGASA-2013-0164
+pubtime: 1370521473
+type: security
+src:
+  2:
+   core:
+     - flightgear-2.6.0-2.3.mga2
+  3:
+   core:
+     - flightgear-2.10.0-1.3.mga3
+subject: Updated flightgear package fixes security vulnerability
+description: |
+  It was reported that FlightGear suffers from improper handling of format
+  strings when FlightGear is started with allowances for remote access (via
+  the --props or --telnet commandline arguments).  If a remote attacker were
+  able to connect to FlightGear and set special parameters related with clouds,
+  it could cause FlightGear to crash.
+references:
+ - http://kuronosec.blogspot.ca/2013/04/flightgear-remote-format-string.html
+ - http://lists.fedoraproject.org/pipermail/package-announce/2013-May/106922.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10351
