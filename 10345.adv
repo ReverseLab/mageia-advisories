@@ -1,0 +1,21 @@
+ID: MGASA-2013-0166
+pubtime: 1370521473
+type: security
+src:
+  3:
+   core:
+     - libvirt-1.0.2-7.1.mga3
+CVE:
+  - CVE-2013-1962
+subject: Updated libvirt packages fix security vulnerability
+description: |
+  It was found that libvirtd leaked file descriptors when listing all volumes
+  for a particular pool. A remote attacker able to establish a read-only
+  connection to libvirtd could use this flaw to cause libvirtd to consume all
+  available file descriptors, preventing other users from using libvirtd
+  services (such as starting a new guest) until libvirtd is restarted
+  (CVE-2013-1962).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1962
+ - https://rhn.redhat.com/errata/RHSA-2013-0831.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10345
