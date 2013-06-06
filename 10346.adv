@@ -1,0 +1,20 @@
+ID: MGASA-2013-0167
+pubtime: 1370521473
+type: security
+src:
+  2:
+   core:
+     - libraw-0.14.5-1.1.mga2
+  3:
+   core:
+     - libraw-0.14.7-5.1.mga3
+CVE:
+  - CVE-2013-2126
+subject: Updated libraw packages fix security vulnerability
+description: |
+  A double-free error exits when handling damaged full-color within Foveon and
+  sRAW files in libraw before 0.15.2 (CVE-2013-2126).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2126
+ - http://secunia.com/advisories/53547/
+ - http://www.libraw.org/news/libraw-0-15-2
