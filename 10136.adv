@@ -1,0 +1,43 @@
+ID: MGASA-2013-0162
+pubtime: 1370521473
+type: security
+src:
+  3:
+   core:
+     - moodle-2.4.4-1.mga3
+CVE:
+  - CVE-2013-2079
+  - CVE-2013-2080
+  - CVE-2013-2081
+  - CVE-2013-2082
+  - CVE-2013-2083
+subject: Updated moodle package fix security vulnerabilities
+description: |
+  The assignment module in Moodle before 2.4.4 was not checking capabilities
+  for users downloading all assignments as a zip (CVE-2013-2079).
+
+  The Gradebook's Overview report in Moodle before 2.4.4 was showing grade
+  totals that may have incorrectly included hidden grades (CVE-2013-2080).
+
+  When registering a site on a hub (not Moodle.net) site in Moodle before
+  2.4.4, information was being sent to the hub regardless of settings chosen
+  (CVE-2013-2081).
+
+  There was no check of permissions for viewing comments on blog posts in
+  Moodle before 2.4.4 (CVE-2013-2082).
+
+  Form elements named using a specific naming scheme were not being filtered
+  correctly in Moodle before 2.4.4 (CVE-2013-2083).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2079
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2080
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2081
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2082
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2083
+ - https://moodle.org/mod/forum/discuss.php?d=228930
+ - https://moodle.org/mod/forum/discuss.php?d=228931
+ - https://moodle.org/mod/forum/discuss.php?d=228933
+ - https://moodle.org/mod/forum/discuss.php?d=228934
+ - https://moodle.org/mod/forum/discuss.php?d=228935
+ - http://docs.moodle.org/dev/Moodle_2.4.4_release_notes
+ - https://moodle.org/mod/forum/discuss.php?d=228536
