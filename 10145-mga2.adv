@@ -1,0 +1,18 @@
+ID: MGASA-2013-0165
+pubtime: 1370521473
+type: security
+src:
+  2:
+   core:
+     - wireshark-1.6.15-1.mga2
+CVE:
+  - CVE-2013-3557
+subject: Updated wireshark packages fix security vulnerability (Mageia 2)
+description: |
+  The ASN.1 BER dissector could crash (CVE-2013-3557).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3557
+ - http://www.wireshark.org/security/wnpa-sec-2013-25.html
+ - http://www.wireshark.org/docs/relnotes/wireshark-1.6.15.html
+ - http://www.wireshark.org/news/20130517.html
+ - http://openwall.com/lists/oss-security/2013/05/20/7

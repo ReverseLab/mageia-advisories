@@ -1,0 +1,55 @@
+ID: MGASA-2013-0168
+pubtime: 1370521473
+type: security
+src:
+  3:
+   core:
+     - wireshark-1.8.7-1.mga3
+CVE:
+  - CVE-2013-2486
+  - CVE-2013-2487
+  - CVE-2013-3555
+  - CVE-2013-3557
+  - CVE-2013-3558
+  - CVE-2013-3559
+  - CVE-2013-3560
+  - CVE-2013-3561
+  - CVE-2013-3562
+subject: Updated wireshark packages fix security vulnerabilities (Mageia 3)
+description: |
+  The RELOAD dissector could go into an infinite loop (CVE-2013-2486,
+  CVE-2013-2487).
+
+  The GTPv2 dissector could crash (CVE-2013-3555).
+
+  The ASN.1 BER dissector could crash (CVE-2013-3557).
+
+  The PPP CCP dissector could crash (CVE-2013-3558).
+
+  The DCP ETSI dissector could crash (CVE-2013-3559).
+
+  The MPEG DSM-CC dissector could crash (CVE-2013-3560).
+
+  The Websocket dissector could crash. The MySQL dissector could go into an
+  infinite loop. The ETCH dissector could go into a large loop (CVE-2013-3561,
+  CVE-2013-3562).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2486
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2487
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3555
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3557
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3558
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3559
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3560
+ - http://www.wireshark.org/security/wnpa-sec-2013-23.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-24.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-25.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-26.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-27.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-28.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-29.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-30.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-31.html
+ - http://www.wireshark.org/docs/relnotes/wireshark-1.8.7.html
+ - http://www.wireshark.org/news/20130517.html
+ - http://openwall.com/lists/oss-security/2013/05/20/7
