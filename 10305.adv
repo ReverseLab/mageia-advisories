@@ -1,0 +1,19 @@
+ID: MGASA-2013-0159
+pubtime: 1370521473
+type: security
+CVE:
+ - CVE-2013-3571
+src:
+  2:
+   core:
+     - socat-1.7.2.2-1.mga2
+  3:
+   core:
+     - socat-2.0.0-0.b6.1.mga3.src.rpm
+subject: Updated socat package fixes security vulnerability
+description: |
+  Under certain circumstances an FD leak occurs and can be misused for denial of
+  service attacks against socat running in server mode (CVE-2013-3571).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3571
+ - http://www.dest-unreach.org/socat/contrib/socat-secadv4.html
