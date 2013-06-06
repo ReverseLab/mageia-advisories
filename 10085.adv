@@ -1,0 +1,21 @@
+ID: MGASA-2013-0160
+pubtime: 1370521473
+type: security
+src:
+  3:
+   core:
+     - nginx-1.2.9-1.1.mga3
+CVE:
+  - CVE-2013-2070
+subject: Updated nginx package fixes security vulnerability
+description: |
+  A security problem related to CVE-2013-2028 was identified, affecting some
+  previous nginx versions if proxy_pass to untrusted upstream HTTP servers is
+  used.  The problem may lead to a denial of service or a disclosure of a
+  worker process memory on a specially crafted response from an upstream
+  proxied server (CVE-2013-2070).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2070
+ - http://mailman.nginx.org/pipermail/nginx-announce/2013/000114.html
+ - http://nginx.org/en/CHANGES-1.2
+ - http://lists.fedoraproject.org/pipermail/package-announce/2013-May/105950.html
