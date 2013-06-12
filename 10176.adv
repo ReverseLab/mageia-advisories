@@ -1,0 +1,15 @@
+ID: MGAA-2013-0031
+type: bugfix
+src:
+  2:
+   core:
+     - python-gobject-2.28.6-7.mga2
+  3:
+   core:
+     - python-gobject-2.28.6-9.mga3
+subject: Updated python-gobject packages fix wrong types for 3 elements
+description: |
+  python-gobject (pygobject) has wrong types for 3 elements.
+references:
+ - https://bugzilla.gnome.org/show_bug.cgi?id=668522
+ - https://bugs.mageia.org/show_bug.cgi?id=10176
