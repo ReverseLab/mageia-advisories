@@ -1,0 +1,13 @@
+ID: MGAA-2013-0028
+type: bugfix
+src:
+  3:
+   core:
+     - apache-mod_auth_kerb-5.4-2.1.mga3
+subject: Updated apache-mod_auth_kerb package fixes typo in module configuration
+description: |
+  A typo in the module configuration for the mod_auth_kerb Apache module
+  prevented the module from loading and Apache from starting.  This has been
+  corrected.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10225
