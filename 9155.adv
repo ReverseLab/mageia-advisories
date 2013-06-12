@@ -6,7 +6,7 @@ src:
      - vlc-2.0.6-0.1.mga2
    tainted:
      - vlc-2.0.6-0.1.mga2.tainted
-subject: Vlc upgrade for bug fixes
+subject: VLC upgrade for bug fixes
 description: |
   2.0.5 fixes around a hundreds of bugs, and adds around 100 commits on
   top of 2.0.4, fixing 50 bugs.
