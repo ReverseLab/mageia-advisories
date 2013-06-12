@@ -1,0 +1,12 @@
+ID: MGAA-2013-0026
+type: bugfix
+src:
+  3:
+   core:
+     - qupzilla-1.4.1-1.1.mga3
+subject: Updated qupzilla package fixes save problems
+description: |
+  This update for qupzilla adds a require on qt4-database-plugin-sqlite
+  which cures a problem with bookmarks and history not being saved.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10319
