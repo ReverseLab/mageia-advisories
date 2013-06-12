@@ -1,0 +1,44 @@
+ID: MGAA-2013-0029
+type: bugfix
+src:
+  2:
+   core:
+     - vlc-2.0.6-0.1.mga2
+   tainted:
+     - vlc-2.0.6-0.1.mga2.tainted
+subject: Vlc upgrade for bug fixes
+description: |
+  2.0.5 fixes around a hundreds of bugs, and adds around 100 commits on
+  top of 2.0.4, fixing 50 bugs.
+
+  With faster decoding on multi-core, GPU, and mobile hardware and the
+  ability to open more formats, notably professional, HD and 10bits codecs,
+  2.0 was a major upgrade for VLC.
+
+  2.0.5 is an important update that fixes some regressions of the 2.0.x
+  branch of VLC.
+
+  2.0.5 introduces an important number of fixes for MKV, SWF, AIFF, RTSP,
+  subtitles and encoding.
+
+  2.0.4 is a major update that fixes a lot of regressions of the 2.0.x
+  branch of VLC.
+
+  2.0.4 introduces an important number of fixes and improvements for all
+  playback, notably for Blu-Ray, DVD, HLS, Ogg and MKV files; but also
+  for Youtube, Vimeo, Koreus and Soundcloud.
+
+  2.0.4 adds Opus codec support, including multichannel ones and streams,
+  and MSS playback through DMO libraries.
+
+  2.0.4 fixes numerous issues, including audio device selection, Qt and
+  Mac OS interface, security issues and Windows wallpaper mode...
+  With faster decoding on multi-core, GPU, and mobile hardware and the
+  ability to open more formats, notably professional, HD and 10bits codecs,
+  2.0 was a major upgrade for VLC.
+
+  2.0.4 fixes around a hundreds of bugs, and adds more than 300 commits
+  on top of 2.0.3.
+references:
+ - http://www.videolan.org/vlc/releases/2.0.5.html
+ - https://bugs.mageia.org/show_bug.cgi?id=9155
