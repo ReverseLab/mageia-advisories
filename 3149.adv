@@ -1,0 +1,13 @@
+ID: MGAA-2013-0030
+type: bugfix
+src:
+  2:
+   core:
+     - mtpaint-3.40-1.mga2
+     - gifsicle-1.70-1.mga2
+subject: Adding mtpaint to Mageia 2
+description: |
+  This update adds mtpaint package which was present in Mandriva 2010.2
+  but was missing in Mageia 2.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=3149
