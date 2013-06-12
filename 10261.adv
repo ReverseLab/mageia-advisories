@@ -1,0 +1,14 @@
+ID: MGAA-2013-0027
+type: bugfix
+src:
+  3:
+   core:
+     - faenza-icon-theme-1.2-2.1.mga3
+subject: Updated faenza-icon-theme package fixes distributor-logo
+description: |
+  New release fixes distributor-logo, start-here and start-here-symbolic
+  icons. By default those are symlinked to Ubuntu icons and this "breaks"
+  some apps using those icons. In new release those icons are symlinked
+  to gnome ones as we don't have Mageia ones, yet.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10261
