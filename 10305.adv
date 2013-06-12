@@ -9,7 +9,7 @@ src:
      - socat-1.7.2.2-1.mga2
   3:
    core:
-     - socat-2.0.0-0.b6.1.mga3.src.rpm
+     - socat-2.0.0-0.b6.1.mga3
 subject: Updated socat package fixes security vulnerability
 description: |
   Under certain circumstances an FD leak occurs and can be misused for denial of
