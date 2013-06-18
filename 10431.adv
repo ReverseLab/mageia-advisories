@@ -30,5 +30,6 @@ description: |
   guest-file-open QEMU Monitor Protocol (QMP) command will still continue to
   be created with world-writable permissions for backwards compatibility.
 references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10431
  - https://rhn.redhat.com/errata/RHSA-2013-0896.html
 ID: MGASA-2013-0169
