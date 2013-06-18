@@ -1,0 +1,33 @@
+type: security
+subject: Updated qemu packages fix security vulnerability
+CVE:
+ - CVE-2013-2007
+src:
+  2:
+   core:
+     - qemu-1.0-6.5.mga2
+  3:
+   core:
+     - qemu-1.2.0-8.1.mga3
+description: |
+  It was found that QEMU Guest Agent (the "qemu-ga" service) created
+  certain files with world-writable permissions when run in daemon mode
+  (the default mode). An unprivileged guest user could use this flaw to
+  consume all free space on the partition containing the qemu-ga log file, or
+  modify the contents of the log. When a UNIX domain socket transport was
+  explicitly configured to be used (not the default), an unprivileged guest
+  user could potentially use this flaw to escalate their privileges in the
+  guest (CVE-2013-2007).
+
+  Note:  This update requires manual action. Refer below for details.
+
+  This update does not change the permissions of the existing log file or
+  the UNIX domain socket. For these to be changed, stop the qemu-ga service,
+  and then manually remove all "group" and "other" permissions on the
+  affected files, or remove the files.
+
+  Also note that after installing this update, files created by the
+  guest-file-open QEMU Monitor Protocol (QMP) command will still continue to
+  be created with world-writable permissions for backwards compatibility.
+references:
+ - https://rhn.redhat.com/errata/RHSA-2013-0896.html
