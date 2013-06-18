@@ -1,0 +1,20 @@
+type: security
+subject: Updated php packages fix security vulnerability
+CVE:
+ - CVE-2013-2110
+src:
+  3:
+   core:
+     - php-5.4.16-1.mga3
+     - php-apc-3.1.14-7.1.mga3
+     - php-gd-bundled-5.4.16-1.mga3
+     - php-timezonedb-2013.3-1.mga3
+description: |
+  Heap based buffer overflow in quoted_printable_encode() in PHP before
+  version 5.4.16 (CVE-2013-2110).
+
+  This update provides PHP version 5.4.16 which fixes this as well as
+  several other issues.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10456
+ - http://www.php.net/ChangeLog-5.php
