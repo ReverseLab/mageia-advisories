@@ -1,0 +1,21 @@
+type: security
+subject: Updated telepathy-gabble package fixes security vulnerability
+CVE:
+ - CVE-2013-1431
+src:
+  2:
+   core:
+     - telepathy-gabble-0.16.6-1.mga2
+  3:
+   core:
+     - telepathy-gabble-0.17.4-1.mga3
+description: |
+  Maksim Otstavnov discovered that the Wocky submodule used by
+  telepathy-gabble does not respect the tls-required flag on legacy
+  Jabber servers. A network intermediary could use this vulnerability to
+  bypass TLS verification and perform a man-in-the-middle attack.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10432
+ - http://www.debian.org/security/2013/dsa-2702
+ - http://lists.freedesktop.org/archives/telepathy/2013-May/006450.html
+ - http://lists.freedesktop.org/archives/telepathy/2013-May/006449.html
