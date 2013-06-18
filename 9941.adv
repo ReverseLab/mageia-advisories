@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated drakxtools packages fix drakfirewall behaviour
+src:
+  2:
+   core:
+     - something-1.0-1.mga2
+  3:
+   core:
+     - drakxtools-15.54.1-2.mga3.src.rpm
+description: |
+Mageia Control Center did not apply firewall settings.
+This update fixes it.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9941
