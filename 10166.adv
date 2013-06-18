@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated schroot package fixes dependencies on devel packages
+src:
+  3:
+   core:
+     - schroot-1.6.3-6.mga3
+description: |
+  schroot package depended on a set of devel packages. This update fix
+  the dependencies.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10166
