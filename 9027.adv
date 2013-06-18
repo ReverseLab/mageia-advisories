@@ -5,6 +5,8 @@ src:
   2:
    core:
      - sssd-1.8.6-1.mga2
+CVE:
+  - CVE-2013-0219
 subject: Updated sssd packages fix security vulnerability
 description: |
  A TOCTOU (time-of-check time-of-use) race condition was found in the way SSSD,
@@ -15,7 +17,6 @@ description: |
  their ability to alter / remove directories outside of originally intended, to
  be modified, directory tree (CVE-2013-0219).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0219
  - https://fedorahosted.org/sssd/ticket/1782
  - http://lists.fedoraproject.org/pipermail/package-announce/2013-February/098434.html
  - https://bugs.mageia.org/show_bug.cgi?id=9027

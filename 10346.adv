@@ -15,6 +15,5 @@ description: |
   A double-free error exits when handling damaged full-color within Foveon and
   sRAW files in libraw before 0.15.2 (CVE-2013-2126).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2126
  - http://secunia.com/advisories/53547/
  - http://www.libraw.org/news/libraw-0-15-2

@@ -16,6 +16,5 @@ description: |
   services (such as starting a new guest) until libvirtd is restarted
   (CVE-2013-1962).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1962
  - https://rhn.redhat.com/errata/RHSA-2013-0831.html
  - https://bugs.mageia.org/show_bug.cgi?id=10345

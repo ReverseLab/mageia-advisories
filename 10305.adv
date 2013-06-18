@@ -15,5 +15,4 @@ description: |
   Under certain circumstances an FD leak occurs and can be misused for denial of
   service attacks against socat running in server mode (CVE-2013-3571).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3571
  - http://www.dest-unreach.org/socat/contrib/socat-secadv4.html

@@ -34,13 +34,6 @@ description: |
   infinite loop. The ETCH dissector could go into a large loop (CVE-2013-3561,
   CVE-2013-3562).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2486
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2487
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3555
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3557
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3558
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3559
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3560
  - http://www.wireshark.org/security/wnpa-sec-2013-23.html
  - http://www.wireshark.org/security/wnpa-sec-2013-24.html
  - http://www.wireshark.org/security/wnpa-sec-2013-25.html

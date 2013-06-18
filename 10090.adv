@@ -15,6 +15,5 @@ description: |
   The kpasswd service provided by kadmind was vulnerable to a UDP
   ping-pong attack (CVE-2002-2443).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2443
  - https://bugzilla.redhat.com/show_bug.cgi?id=962531
  - http://www.mandriva.com/en/support/security/advisories/mbs1/MDVSA-2013:166/

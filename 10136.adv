@@ -29,11 +29,6 @@ description: |
   Form elements named using a specific naming scheme were not being filtered
   correctly in Moodle before 2.4.4 (CVE-2013-2083).
 references:
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2079
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2080
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2081
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2082
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2083
  - https://moodle.org/mod/forum/discuss.php?d=228930
  - https://moodle.org/mod/forum/discuss.php?d=228931
  - https://moodle.org/mod/forum/discuss.php?d=228933
