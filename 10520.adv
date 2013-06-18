@@ -1,0 +1,23 @@
+type: security
+subject: Updated dbus packages fix security vulnerability
+CVE:
+ - CVE-2013-2168
+src:
+  2:
+   core:
+     - dbus-1.4.16-5.2.mga2
+  3:
+   core:
+     - dbus-1.6.8-4.1.mga3
+description: |
+  Alexandru Cornea discovered a vulnerability in libdbus caused by an
+  implementation bug in _dbus_printf_string_upper_bound(). This
+  vulnerability can be exploited by a local user to crash system services
+  that use libdbus, causing denial of service. Depending on the dbus
+  services running, it could lead to complete system crash (CVE-2013-2168).
+
+  This problem only currently appears to affect the x86_64 version of Mageia
+  but we advise that all systems should be updated.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10520
+ - http://www.debian.org/security/2013/dsa-2707
