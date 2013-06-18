@@ -3,7 +3,7 @@ subject: Updated drakxtools packages fix drakfirewall behaviour
 src:
   3:
    core:
-     - drakxtools-15.54.1-2.mga3.src.rpm
+     - drakxtools-15.54.1-2.mga3
 description: |
   Mageia Control Center did not apply firewall settings.
   This update fixes it.
