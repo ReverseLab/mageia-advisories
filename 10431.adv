@@ -31,3 +31,4 @@ description: |
   be created with world-writable permissions for backwards compatibility.
 references:
  - https://rhn.redhat.com/errata/RHSA-2013-0896.html
+ID: MGASA-2013-0169
