@@ -5,7 +5,7 @@ src:
    core:
      - drakxtools-15.54.1-2.mga3.src.rpm
 description: |
-Mageia Control Center did not apply firewall settings.
-This update fixes it.
+  Mageia Control Center did not apply firewall settings.
+  This update fixes it.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=9941
