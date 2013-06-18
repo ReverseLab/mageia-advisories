@@ -1,0 +1,18 @@
+type: bugfix
+subject: Updated urpmi package revert previous update fix
+src:
+  3:
+   core:
+     - urpmi-7.27.3-1.mga3
+description: |
+  This update of urpmi revert the fix in previous update.
+  The previous update intended to fix a bug where extra tainted and/or
+  nonfree media (Backports*, Updates Testing) would be wrongly enabled
+  if tainted and/or nonfree packages would be installed (bug mga#10254).
+
+  The real issue was not in urpmi but in package media definition which
+  has been fixed (bug mga#10335)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10373
+ - https://bugs.mageia.org/show_bug.cgi?id=10254
+ - https://bugs.mageia.org/show_bug.cgi?id=10335
