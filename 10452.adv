@@ -1,5 +1,5 @@
 type: security
-subject: Updated owncload package fixes security vulnerabilities
+subject: Updated owncloud package fixes security vulnerabilities
 CVE:
  - CVE-2013-2150
  - CVE-2013-2149
