@@ -1,0 +1,29 @@
+type: security
+subject: Updated subversion packages fix security vulnerabilities
+CVE:
+ - CVE-2013-1968
+ - CVE-2013-2112
+src:
+  2:
+   core:
+     - subversion-1.7.10-1.mga2
+  3:
+   core:
+     - subversion-1.7.10-1.mga3
+description: |
+  Subversion repositories with the FSFS repository data store format can be
+  corrupted by newline characters in filenames. A remote attacker with a
+  malicious client could use this flaw to disrupt the service for other users
+  using that repository (CVE-2013-1968).
+
+  Subversion's svnserve server process may exit when an incoming TCP connection
+  is closed early in the connection process. A remote attacker can cause
+  svnserve to exit and thus deny service to users of the server (CVE-2013-2112)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10479
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1968
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2112
+ - http://subversion.apache.org/security/CVE-2013-1968-advisory.txt
+ - http://subversion.apache.org/security/CVE-2013-2112-advisory.txt
+ - http://www.debian.org/security/2013/dsa-2703
+
