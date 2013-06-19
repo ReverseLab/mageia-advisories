@@ -2,7 +2,6 @@ type: security
 subject: Updated apache packages fix security vulnerabilities
 CVE:
  - CVE-2013-1862
- - PR54893
 src:
   2:
    core:
