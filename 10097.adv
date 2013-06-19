@@ -18,7 +18,6 @@ description: |
   htdigest (PR54893)
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10097
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1862
  - https://issues.apache.org/bugzilla/show_bug.cgi?id=54893
  - https://rhn.redhat.com/errata/RHSA-2013-0815.html
 

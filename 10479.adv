@@ -21,8 +21,6 @@ description: |
   svnserve to exit and thus deny service to users of the server (CVE-2013-2112)
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10479
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1968
- - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2112
  - http://subversion.apache.org/security/CVE-2013-1968-advisory.txt
  - http://subversion.apache.org/security/CVE-2013-2112-advisory.txt
  - http://www.debian.org/security/2013/dsa-2703
