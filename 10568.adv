@@ -9,6 +9,7 @@ src:
   3:
    core:
      - puppet-2.7.22-1.mga3
+     - puppet3-3.2.2-1.mga3
 description: |
   When making REST api calls, the puppet master takes YAML from an untrusted
   client, deserializes it, and then calls methods on the resulting object.
