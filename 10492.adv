@@ -1,0 +1,21 @@
+type: security
+subject: Updated php package fixes several issues
+CVE:
+ - CVE-2013-2110
+src:
+  2:
+   core:
+     - php-5.3.26-1.mga2
+     - php-apc-3.1.13-1.8.mga2
+     - php-eaccelerator-0.9.6.1-10.10.mga2
+     - php-gd-bundled-5.3.26-1.mga2
+     - php-timezonedb-2013.3-1.mga2
+     - php-firebird-5.3.26-1.mga2
+     - php-pdo_firebird-5.3.26-1.mga2
+description: |
+  Fixed bug #64879 (Heap based buffer overflow in quoted_printable_encode, CVE-2013-2110)
+  See the changelog for additional bug fixes.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10492
+ - http://www.php.net/ChangeLog-5.php
+
