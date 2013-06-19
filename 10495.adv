@@ -1,0 +1,21 @@
+type: security
+subject: Updated flash-player-plugin package fixes memory corruption vulnerability
+CVE:
+ - CVE-2013-3343
+src:
+  2:
+   nonfree:
+     - flash-player-plugin-11.2.202.291-1.mga2.nonfree
+  3:
+   nonfree:
+     - flash-player-plugin-11.2.202.291-1.mga3.nonfree
+description: |
+  Advisory: Adobe Flash Player 11.2.202.291 contains a fix to a critical security
+  vulnerability found in earlier versions. This vulnerability could cause a
+  crash and potentially allow an attacker to take control of the affected system.
+  
+  This update resolves a memory corruption vulnerability that could lead to code execution (CVE-2013-3343)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10495
+ - http://www.adobe.com/support/security/bulletins/apsb13-16.html
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3343
