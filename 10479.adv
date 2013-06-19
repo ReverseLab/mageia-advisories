@@ -24,3 +24,4 @@ references:
  - http://subversion.apache.org/security/CVE-2013-1968-advisory.txt
  - http://subversion.apache.org/security/CVE-2013-2112-advisory.txt
  - http://www.debian.org/security/2013/dsa-2703
+ID: MGASA-2013-0175
