@@ -1,0 +1,25 @@
+type: security
+subject: Updated apache packages fix security vulnerabilities
+CVE:
+ - CVE-2013-1862
+ - PR54893
+src:
+  2:
+   core:
+     - apache-2.2.24-1.1.mga2
+description: |
+  It was found that mod_rewrite did not filter terminal escape sequences from
+  its log file. If mod_rewrite was configured with the RewriteLog directive,
+  a remote attacker could use specially-crafted HTTP requests to inject
+  terminal escape sequences into the mod_rewrite log file. If a victim viewed
+  the log file with a terminal emulator, it could result in arbitrary command
+  execution with the privileges of that user (CVE-2013-1862).
+
+  A buffer overflow when reading digest password file with very long lines in
+  htdigest (PR54893)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10097
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1862
+ - https://issues.apache.org/bugzilla/show_bug.cgi?id=54893
+ - https://rhn.redhat.com/errata/RHSA-2013-0815.html
+
