@@ -1,0 +1,19 @@
+type: security
+subject: Updated puppet packages fix remote code execution vulnerability
+CVE:
+ - CVE-2013-3567
+src:
+  2:
+   core:
+     - puppet-2.7.22-1.mga2
+  3:
+   core:
+     - puppet-2.7.22-1.mga3
+description: |
+  When making REST api calls, the puppet master takes YAML from an untrusted
+  client, deserializes it, and then calls methods on the resulting object.
+  A YAML payload can be crafted to cause the deserialization to construct
+  an instance of any class available in the ruby process, which allows an
+  attacker to execute code contained in the payload.
+references:
+ - http://puppetlabs.com/security/cve/cve-2013-3567/
