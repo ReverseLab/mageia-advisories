@@ -10,8 +10,6 @@ src:
     tainted:
       - mesa-8.0.5-1.1.mga2.tainted
 description: |
-  Updated mesa packages fix security vulnerabilities:
-
   An out-of-bounds access flaw was found in Mesa. If an application using
   Mesa exposed the Mesa API to untrusted inputs (Mozilla Firefox does
   this), an attacker could cause the application to crash or, potentially,
