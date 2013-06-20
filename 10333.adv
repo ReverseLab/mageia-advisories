@@ -1,0 +1,22 @@
+type: security
+subject: apache-mod_security new security issue CVE-2013-2765
+CVE:
+ - CVE-2013-2765
+src:
+  2:
+   core:
+     - apache-mod_security-2.6.3-3.5.mga2
+  3:
+   core:
+     - apache-mod_security-2.7.4-1.mga3
+description: |
+  Updated apache-mod_security packages fix security vulnerability:
+  
+  When ModSecurity receives a request body with a size bigger than the
+  value set by the "SecRequestBodyInMemoryLimit" and with a
+  "Content-Type" that has no request body processor mapped to it,
+  ModSecurity will systematically crash on every call to
+  "forceRequestBodyVariable" (in phase 1) (CVE-2013-2765).
+references:
+ - http://www.shookalabs.com/#advisory-cve-2013-2765
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-June/107848.html
