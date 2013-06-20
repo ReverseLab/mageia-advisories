@@ -7,7 +7,6 @@ src:
   2:
     core:
       - mesa-8.0.5-1.1.mga2
-  2:
     tainted:
       - mesa-8.0.5-1.1.mga2.tainted
 description: |
