@@ -1,0 +1,25 @@
+type: bugfix
+subject: Updated rkhunter package eliminates false positive on gaskit rootkit
+src:
+  2:
+   core:
+    - rkhunter-1.3.8-3.1.mga2
+  3:
+   core:
+    - rkhunter-1.4.0-3.1.mga3
+description: |
+  Using rkhunter on a Mageia 2 or 3 system, the gaskit rootkit was erroneously
+  detected as it triggered on the presence of the directory /dev/dev which is
+  commonly available on Mageia systems.
+
+  Furthermore, the whitelisting of a file which no longer is present on
+  Mageia 3 systems would prevent rkhunter from starting properly. Other files
+  which should have been whitelisted were missing, resulting in warnings
+  appearing.
+
+  This update addresses these issues. rkhunter users are advised to install
+  the updated package.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9313
+ - https://bugs.mageia.org/show_bug.cgi?id=9398
+ - https://bugs.mageia.org/show_bug.cgi?id=8172
