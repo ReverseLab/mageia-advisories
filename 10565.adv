@@ -56,27 +56,7 @@ src:
      - mesa-9.1.3-1.1.mga3
      - x11-driver-video-openchrome-0.3.3-1.mga3
    tainted:
-     - libdmx-1.1.3-1.mga3.tainted
-     - libfs-1.0.5-1.mga3.tainted
-     - libx11-1.5.99.902-1.mga3.tainted
-     - libxcb-1.9.1-1.mga3.tainted
-     - libxcursor-1.1.14-1.mga3.tainted
-     - libxext-1.3.2-1.mga3.tainted
-     - libxfixes-5.0.1-1.mga3.tainted
-     - libxi-1.6.2.901-1.mga3.tainted
-     - libxinerama-1.1.3-1.mga3.tainted
-     - libxp-1.0.2-1.mga3.tainted
-     - libxrandr-1.4.1-1.mga3.tainted
-     - libxrender-0.9.8-1.mga3.tainted
-     - libxres-1.0.7-1.mga3.tainted
-     - libxt-1.1.4-1.mga3.tainted
-     - libxtst-1.2.2-1.mga3.tainted
-     - libxv-1.0.8-1.mga3.tainted
-     - libxvmc-1.0.8-1.mga3.tainted
-     - libxxf86dga-1.1.4-1.mga3.tainted
-     - libxxf86vm-1.1.3-1.mga3.tainted
      - mesa-9.1.3-1.1.mga3.tainted
-     - x11-driver-video-openchrome-0.3.3-1.mga3.tainted
 description: |
   Ilja van Sprundel of IOActive discovered several security issues in multiple
   components of the X.org graphics stack and the related libraries: Various
