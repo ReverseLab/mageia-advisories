@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated leptonica adds support for missing image formats
+src:
+  3:
+   core:
+    - leptonica-1.69-2.1.mga3
+description: |
+  libleptonica was built without tiff, gif, png, jpeg and zlib support;
+  making it quite useless. As an example, tesseract was non functional
+  because of this.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10411
+ - https://bugs.mageia.org/show_bug.cgi?id=10403
