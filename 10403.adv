@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated tesseract packages fix a failure to start with non EN l10n
+src:
+  3:
+   core:
+    - tesseract-3.02.02-3.1.mga3
+description: |
+  This adds a require on tesseract-eng which is needed by tesseract whichever
+  language pack is chosen. Without tesseract-eng, tesseract fails to start.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10403
