@@ -9,3 +9,4 @@ description: |
   language pack is chosen. Without tesseract-eng, tesseract fails to start.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10403
+
