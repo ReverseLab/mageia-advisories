@@ -1,0 +1,52 @@
+type: security
+subject: Updated wireshark packages fix multiple security vulnerabilities
+CVE:
+  - CVE-2013-4074
+  - CVE-2013-4075
+  - CVE-2013-4076
+  - CVE-2013-4077
+  - CVE-2013-4078
+  - CVE-2013-4079
+  - CVE-2013-4080
+  - CVE-2013-4081
+  - CVE-2013-4082
+  - CVE-2013-4083
+src:
+  3:
+   core:
+    - wireshark-1.8.8-1.mga3
+description: |
+  The CAPWAP dissector could crash (CVE-2013-4074).
+
+  The GMR-1 BCCH dissector could crash (CVE-2013-4075).
+
+  The PPP dissector could crash (CVE-2013-4076).
+
+  The NBAP dissector could crash (CVE-2013-4077).
+
+  The RDP dissector could crash (CVE-2013-4078).
+
+  The GSM CBCH dissector could crash (CVE-2013-4079).
+
+  The Assa Abloy R3 dissector could consume excessive memory and CPU
+  (CVE-2013-4080).
+
+  The HTTP dissector could overrun the stack (CVE-2013-4081).
+
+  The Ixia IxVeriWave file parser could overflow the heap (CVE-2013-4082).
+
+  The DCP ETSI dissector could crash (CVE-2013-4083).
+references:
+  - http://www.wireshark.org/security/wnpa-sec-2013-32.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-33.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-34.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-35.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-36.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-37.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-38.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-39.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-40.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-41.html
+  - http://www.wireshark.org/docs/relnotes/wireshark-1.8.8.html
+  - http://www.wireshark.org/news/20130607.html
+  - https://bugs.mageia.org/show_bug.cgi?id=10471

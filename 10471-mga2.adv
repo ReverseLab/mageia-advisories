@@ -1,0 +1,24 @@
+type: security
+subject: Updated wireshark packages fix multiple security vulverabilities
+CVE:
+ - CVE-2013-4074
+ - CVE-2013-4081
+ - CVE-2013-4083
+src:
+  2:
+   core:
+    - wireshark-1.6.16-1.mga2
+description: |
+  The CAPWAP dissector could crash (CVE-2013-4074).
+
+  The HTTP dissector could overrun the stack (CVE-2013-4081).
+
+  The DCP ETSI dissector could crash (CVE-2013-4083).
+references:
+  - http://www.wireshark.org/security/wnpa-sec-2013-32.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-39.html
+  - http://www.wireshark.org/security/wnpa-sec-2013-41.html
+  - http://www.wireshark.org/docs/relnotes/wireshark-1.6.16.html
+  - http://www.wireshark.org/news/20130607.html
+  - http://www.mandriva.com/en/support/security/advisories/mbs1/MDVSA-2013:172/
+  - https://bugs.mageia.org/show_bug.cgi?id=10471
