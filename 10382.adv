@@ -11,3 +11,4 @@ description: |
   This update corrects these issues and allows the service to be started.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10382
+ID: MGAA-2013-0038
