@@ -1,0 +1,84 @@
+type: security
+subject: Updated Firefox and Thunderbird packages fix multiple vulnerabilities
+CVE:
+  - CVE-2013-1682
+  - CVE-2013-1684
+  - CVE-2013-1685
+  - CVE-2013-1686
+  - CVE-2013-1687
+  - CVE-2013-1690
+  - CVE-2013-1692
+  - CVE-2013-1693
+  - CVE-2013-1694
+  - CVE-2013-1697
+src:
+  2:
+   core:
+     - firefox-17.0.7-1.mga2
+     - firefox-l10n-17.0.7-1.mga2
+     - thunderbird-17.0.7-1.mga2
+     - thunderbird-l10n-17.0.7-1.mga2
+  3:
+   core:
+     - firefox-17.0.7-1.mga3
+     - firefox-l10n-17.0.7-1.mga3
+     - thunderbird-17.0.7-1.mga3
+     - thunderbird-l10n-17.0.7-1.mga3
+description: |
+  Updated firefox packages fix security vulnerabilities..
+
+  Several flaws were found in the processing of malformed web content. A web
+  page containing malicious content could cause Firefox to crash or,
+  potentially, execute arbitrary code with the privileges of the user running
+  Firefox (CVE-2013-1682, CVE-2013-1684, CVE-2013-1685, CVE-2013-1686,
+  CVE-2013-1687, CVE-2013-1690).
+
+  It was found that Firefox allowed data to be sent in the body of
+  XMLHttpRequest (XHR) HEAD requests. In some cases this could allow
+  attackers to conduct Cross-Site Request Forgery (CSRF) attacks
+  (CVE-2013-1692).
+
+  Timing differences in the way Firefox processed SVG image files could
+  allow an attacker to read data across domains, potentially leading to
+  information disclosure (CVE-2013-1693).
+
+  Two flaws were found in the way Firefox implemented some of its internal
+  structures (called wrappers). An attacker could use these flaws to bypass
+  some restrictions placed on them. This could lead to unexpected behavior or
+  a potentially exploitable crash (CVE-2013-1694, CVE-2013-1697).
+
+
+  Updated thunderbird packages fix security vulnerabilities..
+
+  Several flaws were found in the processing of malformed content. Malicious
+  content could cause Thunderbird to crash or, potentially, execute arbitrary
+  code with the privileges of the user running Thunderbird (CVE-2013-1682,
+  CVE-2013-1684, CVE-2013-1685, CVE-2013-1686, CVE-2013-1687, CVE-2013-1690).
+
+  It was found that Thunderbird allowed data to be sent in the body of
+  XMLHttpRequest (XHR) HEAD requests. In some cases this could allow
+  attackers to conduct Cross-Site Request Forgery (CSRF) attacks
+  (CVE-2013-1692).
+
+  Timing differences in the way Thunderbird processed SVG image files could
+  allow an attacker to read data across domains, potentially leading to
+  information disclosure (CVE-2013-1693).
+
+  Two flaws were found in the way Thunderbird implemented some of its
+  internal structures (called wrappers). An attacker could use these flaws to
+  bypass some restrictions placed on them. This could lead to unexpected
+  behavior or a potentially exploitable crash (CVE-2013-1694, CVE-2013-1697).
+references:
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-49.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-50.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-51.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-53.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-54.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-55.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-56.html
+  - http://www.mozilla.org/security/announce/2013/mfsa2013-59.html
+  - http://www.mozilla.org/security/known-vulnerabilities/firefoxESR.html
+  - https://rhn.redhat.com/errata/RHSA-2013-0981.html
+  - http://www.mozilla.org/security/known-vulnerabilities/thunderbirdESR.html
+  - https://rhn.redhat.com/errata/RHSA-2013-0982.html
+  - https://bugs.mageia.org/show_bug.cgi?id=10621
