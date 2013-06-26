@@ -1,0 +1,45 @@
+type: security
+subject: Updated ffmpeg packages fix several security vulnerabilities
+CVE:
+ - CVE-2013-3671
+ - CVE-2013-3672
+ - CVE-2013-3673
+ - CVE-2013-3674
+src:
+  3:
+   core:
+    - ffmpeg-1.1.5-1.mga3
+   tainted:
+    - ffmpeg-1.1.5-1.mga3.tainted
+description: |
+  ffmpeg prior to 1.1.5 contains several security vulnerabilities
+  
+  * CVE-2013-3671:
+  The format_line function in log.c in libavutil uses inapplicable offset
+  data during a certain category calculation, which allows remote attackers
+  to cause a denial of service (invalid pointer dereference and application
+  crash) via crafted data that triggers a log message.
+
+  * CVE-2013-3672:
+  The mm_decode_inter function in mmvideo.c in libavcodec does not validate
+  the relationship between a horizontal coordinate and a width value, which
+  allows remote attackers to cause a denial of service (out-of-bounds array
+  access and application crash) via crafted American Laser Games (ALG) MM
+  Video data.
+
+  * CVE-2013-3673:
+  The gif_decode_frame function in gifdec.c in libavcodec does not properly
+  manage the disposal methods of frames, which allows remote attackers to
+  cause a denial of service (out-of-bounds array access and application crash)
+  via crafted GIF data.
+
+  * CVE-2013-3674:
+  The cdg_decode_frame function in cdgraphics.c in libavcodec does not validate
+  the presence of non-header data in a buffer, which allows remote attackers to
+  cause a denial of service (out-of-bounds array access and application crash)
+  via crafted CD Graphics Video data.
+
+  The ffmpeg packages have been updated to fix above security vulnerabilities,
+  with extra bugs-fixes.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10506
