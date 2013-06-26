@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated sphinx package fixes user creation & permissions
+src:
+  3:
+   core:
+    - sphinx-2.0.6-6.mga3
+description: |
+  Sphinx would fail to start, complaining that that the user sphinx is
+  unknown. There was also incorrect log file ownership and file permissions.
+  
+  This update corrects these issues and allows the service to be started.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10382
