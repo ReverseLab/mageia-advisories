@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated calibre package corrects PDF to MOBI conversion
+src:
+  3:
+   core:
+    - calibre-0.9.36-1.2.mga3
+description: |
+  This update of calibre adds 'python-cssselect' as a require. Without this
+  require, PDF file conversion to MOBI file can't work (mga #10180).
+  Moreover, this new version of calibre 0.9.36 adds support for a lot of new
+  reader devices (and/or firmware updates) and also fixed a lot of known bugs.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10180
