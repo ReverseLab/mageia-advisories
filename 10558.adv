@@ -1,0 +1,17 @@
+type: security
+subject: Updated perl-Module-Signature package fixes CVE-2013-2145
+CVE:
+ - CVE-2013-2145
+src:
+  2:
+   core:
+    - perl-Module-Signature-0.730.0-1.mga2
+  3:
+   core:
+    - perl-Module-Signature-0.730.0-1.mga3
+description: |
+Arbitrary code execution vulnerability in Module::Signature before 0.72
+(CVE-2013-2145).
+references:
+  - https://lists.fedoraproject.org/pipermail/package-announce/2013-June/109387.html
+  - https://bugs.mageia.org/show_bug.cgi?id=10558
