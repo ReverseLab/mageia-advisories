@@ -1,0 +1,21 @@
+type: security
+subject: Updated curl packages fix CVE-2013-2174
+CVE:
+  - CVE-2013-2174
+src:
+  2:
+   core:
+    - curl-7.24.0-1.2.mga2
+  3:
+   core:
+    - curl-7.28.1-6.1.mga3
+description: |
+  libcurl is vulnerable to a case of bad checking of the input data which may
+  lead to heap corruption. The function curl_easy_unescape() decodes URL encoded
+  strings to raw binary data. URL encoded octets are represented with %HH
+  combinations where HH is a two-digit hexadecimal number. The decoded string is
+  written to an allocated memory area that the function returns to the caller
+  (CVE-2013-2174)
+references:
+  - http://curl.haxx.se/docs/adv_20130622.html
+  - https://bugs.mageia.org/show_bug.cgi?id=10595
