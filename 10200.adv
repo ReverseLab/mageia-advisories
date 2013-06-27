@@ -1,0 +1,22 @@
+type: security
+subject: Updated tomcat7 packages fix CVE-2013-2071
+CVE:
+ - CVE-2013-2071
+src:
+  2:
+   core:
+     - tomcat-7.0.41-3.mga2
+  3:
+   core:
+     - tomcat-7.0.41-4.mga3
+description: |
+  java/org/apache/catalina/core/AsyncContextImpl.java in Apache Tomcat 7.x
+  before 7.0.40 does not properly handle the throwing of a RuntimeException
+  in an AsyncListener in an application, which allows context-dependent
+  attackers to obtain sensitive request information intended for other
+  applications in opportunistic circumstances via an application that records
+  the requests that it processes (CVE-2013-2071).
+references:
+  - http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.40
+  - http://lists.fedoraproject.org/pipermail/package-announce/2013-May/105886.html
+  - https://bugs.mageia.org/show_bug.cgi?id=10200
