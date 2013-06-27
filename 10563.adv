@@ -1,0 +1,40 @@
+type: security
+subject: Updated xml-security-c package fixes multiple security vulnerabilities
+CVE:
+  - CVE-2013-2153
+  - CVE-2013-2154
+  - CVE-2013-2155
+  - CVE-2013-2156
+  - CVE-2013-2210
+src:
+  2:
+   core:
+     - xml-security-c-1.6.1-1.2.mga2
+  3:
+   core:
+     - xml-security-c-1.7.0-2.2.mga3
+description: |
+  The implementation of XML digital signatures in the Santuario-C++ library
+  is vulnerable to a spoofing issue allowing an attacker to reuse existing
+  signatures with arbitrary content (CVE-2013-2153).
+
+  A stack overflow, possibly leading to arbitrary code execution, exists in
+  the processing of malformed XPointer expressions in the XML Signature
+  Reference processing code (CVE-2013-2154).
+
+  A bug in the processing of the output length of an HMAC-based XML
+  Signature would cause a denial of service when processing specially chosen
+  input (CVE-2013-2155).
+
+  A heap overflow exists in the processing of the PrefixList attribute
+  optionally used in conjunction with Exclusive Canonicalization, potentially
+  allowing arbitrary code execution (CVE-2013-2156).
+
+  The attempted fix to address CVE-2013-2154 introduced the possibility of a
+  heap overflow, possibly leading to arbitrary code execution, in the
+  processing of malformed XPointer expressions in the XML Signature Reference
+  processing code (CVE-2013-2210).
+references:
+  - http://santuario.apache.org/secadv.html
+  - http://www.debian.org/security/2013/dsa-2710
+  - https://bugs.mageia.org/show_bug.cgi?id=10563
