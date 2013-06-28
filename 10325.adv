@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated opencpn package fixes a crash opening a file with only one date
+src:
+  3:
+   core:
+     - opencpn-3.2.2-1.1.mga3
+description: |
+  This version is a maintenance release and update of OpenCPN Version 3.2.
+  It corrects several non-critical operational faults and special case
+  configurations, particularly it corrects a crash when opening a file with
+  only one date.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10325
