@@ -1,0 +1,23 @@
+type: security
+subject: Updated fail2ban packages fix CVE-2013-2178
+CVE:
+ - CVE-2013-2178
+src:
+  2:
+   core:
+     - fail2ban-0.8.6-3.2.mga2
+  3:
+   core:
+     - fail2ban-0.8.8-6.1.mga3
+description: |
+  Krzysztof Katowicz-Kowalewski discovered a vulnerability in Fail2ban, a log
+  monitoring and system which can act on attack by preventing hosts to connect
+  to specified services using the local firewall.
+
+  When using Fail2ban to monitor Apache logs, improper input validation in log
+  parsing could enable a remote attacker to trigger an IP ban on arbitrary
+  addresses, thus causing a denial of service (CVE-2013-2178).
+references:
+  - https://vndh.net/note:fail2ban-089-denial-service
+  - http://www.debian.org/security/2013/dsa-2708
+  - https://bugs.mageia.org/show_bug.cgi?id=10550
