@@ -1,0 +1,29 @@
+type: security
+subject: Updated xen package fixes security issues
+CVE:
+ - CVE-2013-2076 
+ - CVE-2013-2077
+ - CVE-2013-2078
+ - CVE-2013-2194
+ - CVE-2013-2195
+ - CVE-2013-2196
+ - CVE-2013-2072
+ - CVE-2013-2211
+ - CVE-2013-1432
+src:
+  3:
+   core:
+     - xen-4.2.1-16.2.mga3
+description: |
+  This update fixes the following security issues:
+  XSA-52/CVE-2013-2076: Information leak on XSAVE/XRSTOR capable AMD CPUs
+  XSA-53/CVE-2013-2077: Hypervisor crash due to missing exception recovery on XRSTOR
+  XSA-54/CVE-2013-2078: Hypervisor crash due to missing exception recovery on XSETBV
+  XSA-55/CVE-2013-2194: integer overflows
+  XSA-55/CVE-2013-2195: pointer dereferences
+  XSA-55/CVE-2013-2196: other problems
+  XSA-56/CVE-2013-2072: Buffer overflow in xencontrol Python bindings affecting xend
+  XSA-57/CVE-2013-2211: libxl allows guest write access to sensitive console related xenstore keys
+  XSA-58/CVE-2013-1432: Page reference counting error due to XSA-45/CVE-2013-1918 fixes
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10586
