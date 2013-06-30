@@ -1,0 +1,16 @@
+type: bugfix
+subject: Updated qtwebkit-qmlplugin package fixes for i586 cpus without sse2
+src:
+  3:
+   core:
+     - qtwebkit-2.3.0-1.1.mga3.src.rpm
+description: |
+  This updates fixes crashes in various applications that depend on libqtwebkit
+  when they run on older processors, that do not support sse2. The rpm packages
+  involved are ...
+  lib64qtwebkit2.2_4
+  lib64qtwebkit2.2-devel
+  qtwebkit-qmlplugin
+  (Note, lib64 should be replaced with lib on i586 installaations.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10157
