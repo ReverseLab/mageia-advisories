@@ -1,0 +1,22 @@
+type: security
+subject: Updated otrs package fixes security vulnerabilities
+CVE:
+ - CVE-2013-3551
+ - CVE-2013-4088
+src:
+  2:
+   core:
+     - otrs-3.2.8-1.mga2
+  3:
+   core:
+     - otrs-3.2.8-1.mga3
+description: |
+  An attacker with a valid agent login could manipulate URLs in the ticket
+  watch mechanism to see contents of tickets they are not permitted to see
+  (CVE-2013-3551, CVE-2013-4088).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10352
+ - http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2013-03/
+ - http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2013-04/
+ - http://www.debian.org/security/2013/dsa-2696
+ - http://www.debian.org/security/2013/dsa-2712
