@@ -1,0 +1,139 @@
+type: security
+subject: Updated chromium-browser-stable packages fixes security vulnerabilities
+CVE:
+ - CVE-2013-2837
+ - CVE-2013-2838
+ - CVE-2013-2839
+ - CVE-2013-2840
+ - CVE-2013-2841
+ - CVE-2013-2842
+ - CVE-2013-2843
+ - CVE-2013-2844
+ - CVE-2013-2845
+ - CVE-2013-2846
+ - CVE-2013-2847
+ - CVE-2013-2848
+ - CVE-2013-2849
+ - CVE-2013-2855
+ - CVE-2013-2856
+ - CVE-2013-2857
+ - CVE-2013-2858
+ - CVE-2013-2859
+ - CVE-2013-2860
+ - CVE-2013-2861
+ - CVE-2013-2862
+ - CVE-2013-2863
+ - CVE-2013-2865
+src:
+  2:
+   core:
+     - chromium-browser-stable-28.0.1500.45-1.mga2
+  3:
+   core:
+     - chromium-browser-stable-28.0.1500.45-1.mga3
+description: |
+  Use-after-free vulnerability in the SVG implementation allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via unknown vectors (CVE-2013-2837).
+  
+  Google V8, as used in Chromium before 27.0.1453.93, allows remote attackers
+  to cause a denial of service (out-of-bounds read) via unspecified vectors
+  (CVE-2013-2838).
+  
+  Chromium before 27.0.1453.93 does not properly perform a cast of an
+  unspecified variable during handling of clipboard data, which allows remote
+  attackers to cause a denial of service or possibly have other impact via
+  unknown vectors (CVE-2013-2839).
+  
+  Use-after-free vulnerability in the media loader in Chromium before
+  27.0.1453.93 allows remote attackers to cause a denial of service or possibly
+  have unspecified other impact via unknown vectors (CVE-2013-2840).
+  
+  Use-after-free vulnerability in Chromium before 27.0.1453.93 allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via vectors related to the handling of Pepper resources
+  (CVE-2013-2841).
+  
+  Use-after-free vulnerability in Chromium before 27.0.1453.93 allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via vectors related to the handling of widgets (CVE-2013-2842).
+  
+  Use-after-free vulnerability in Chromium before 27.0.1453.93 allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via vectors related to the handling of speech data (CVE-2013-2843).
+  
+  Use-after-free vulnerability in the Cascading Style Sheets (CSS)
+  implementation in Chromium before 27.0.1453.93 allows remote attackers to
+  cause a denial of service or possibly have unspecified other impact via
+  vectors related to style resolution (CVE-2013-2844).
+  
+  The Web Audio implementation in Google Chrome before 27.0.1453.93 allows
+  remote attackers to cause a denial of service (memory corruption) or possibly
+  have unspecified other impact via unknown vectors (CVE-2013-2845).
+  
+  Use-after-free vulnerability in the media loader in Google Chrome before
+  27.0.1453.93 allows remote attackers to cause a denial of service or possibly
+  have unspecified other impact via unknown vectors (CVE-2013-2846).
+  
+  Race condition in the workers implementation in Google Chrome before
+  27.0.1453.93 allows remote attackers to cause a denial of service
+  (use-after-free and application crash) or possibly have unspecified other
+  impact via unknown vectors (CVE-2013-2847).
+  
+  The XSS Auditor in Google Chrome before 27.0.1453.93 might allow remote
+  attackers to obtain sensitive information via unspecified vectors
+  (CVE-2013-2848).
+  
+  Multiple cross-site scripting (XSS) vulnerabilities in Google Chrome before
+  27.0.1453.93 allow user-assisted remote attackers to inject arbitrary web
+  script or HTML via vectors involving a (1) drag-and-drop or
+  (2) copy-and-paste operation (CVE-2013-2849).
+  
+  The Developer Tools API in Chromium before 27.0.1453.110 allows remote
+  attackers to cause a denial of service (memory corruption) or possibly have
+  unspecified other impact via unknown vectors (CVE-2013-2855).
+  
+  Use-after-free vulnerability in Chromium before 27.0.1453.110 allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via vectors related to the handling of input (CVE-2013-2856).
+  
+  Use-after-free vulnerability in Chromium before 27.0.1453.110 allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via vectors related to the handling of images (CVE-2013-2857).
+  
+  Use-after-free vulnerability in the HTML5 Audio implementation in Chromium
+  before 27.0.1453.110 allows remote attackers to cause a denial of service or
+  possibly have unspecified other impact via unknown vectors (CVE-2013-2858).
+  
+  Chromium before 27.0.1453.110 allows remote attackers to bypass the Same
+  Origin Policy and trigger namespace pollution via unspecified vectors
+  (CVE-2013-2859).
+  
+  Use-after-free vulnerability in Chromium before 27.0.1453.110 allows remote
+  attackers to cause a denial of service or possibly have unspecified other
+  impact via vectors involving access to a database API by a worker process
+  (CVE-2013-2860).
+  
+  Use-after-free vulnerability in the SVG implementation in Chromium before
+  27.0.1453.110 allows remote attackers to cause a denial of service or
+  possibly have unspecified other impact via unknown vectors (CVE-2013-2861).
+  
+  Skia, as used in Chromium before 27.0.1453.110, does not properly handle GPU
+  acceleration, which allows remote attackers to cause a denial of service
+  (memory corruption) or possibly have unspecified other impact via unknown
+  vectors (CVE-2013-2862).
+  
+  Chromium before 27.0.1453.110 does not properly handle SSL sockets, which
+  allows remote attackers to execute arbitrary code or cause a denial of
+  service (memory corruption) via unspecified vectors (CVE-2013-2863).
+  
+  Multiple unspecified vulnerabilities in Chromium before 27.0.1453.110 allow
+  attackers to cause a denial of service or possibly have other impact via
+  unknown vectors (CVE-2013-2865).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10353
+ - http://googlechromereleases.blogspot.com/2013/05/stable-channel-release.html
+ - http://googlechromereleases.blogspot.com/2013/06/stable-channel-update.html
+ - http://googlechromereleases.blogspot.com/2013/06/stable-channel-update_17.html
+ - http://www.debian.org/security/2013/dsa-2695
+ - http://www.debian.org/security/2013/dsa-2706
