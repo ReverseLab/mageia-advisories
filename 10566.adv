@@ -1,0 +1,17 @@
+type: security
+subject: Updated autotrace package fixes security vulnerability
+CVE:
+ - CVE-2013-1953
+src:
+  2:
+   core:
+     - autotrace-0.31.1-34.1.mga2
+  3:
+   core:
+     - autotrace-0.31.1-37.1.mga3
+description: |
+  Stack-based buffer overflow in bmp parser (CVE-2013-1953).
+  Updated autotrace package corrects the issue.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10566
+ - http://lists.opensuse.org/opensuse-updates/2013-06/msg00168.html
