@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated usb-imagewriter package fixes missing dependency of pygtk2.0-libglade
+src:
+  3:
+   core:
+     - usb-imagewriter-0.1.3-4.1.mga3
+description: |
+  The rpm pacakge usb-imagewriter was missing a requires on the rpm
+  package pygtk2.0-libglade, which must be installed for the program
+  to run. This update corrects the issue.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10592
