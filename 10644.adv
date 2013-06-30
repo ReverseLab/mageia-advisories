@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated smem package fixes a parsing issue in user info
+src:
+  3:
+   core:
+     - smem-1.2-2.2.mga3
+description: |
+  Updated smem packages fix a parsing issue in user info which made smem
+  report an empty list of processes and made smem -u crash.
+
+  This update also adds the missing man page (patch by danf).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10644
