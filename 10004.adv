@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated avahi package fixes setting of incorrect home directory
+src:
+  3:
+   core:
+     - avahi-0.6.31-2.2.mga3
+description: |
+  This update corrects a bug in avahi that caused the avahi user to use
+  the wrong home directory. It also moves the dnsconfd systemd unit file
+  to the avahi-dnsconfd subpackage.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10004
