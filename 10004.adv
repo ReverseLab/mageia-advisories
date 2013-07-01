@@ -10,3 +10,4 @@ description: |
   to the avahi-dnsconfd subpackage.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10004
+ID: MGAA-2013-0044
