@@ -1,0 +1,31 @@
+type: bugfix
+subject: Updated Subversion pacakges to fix the svnserve startup
+src:
+  3:
+   core:
+     - subversion-1.7.10-1.2.mga3
+description: |
+  Carlos Vives reported that the "svnserve systemd service" is unable to start,
+  and gave a solution. This solution was implemented in these updates.
+  Updated packages include ...
+      apache-mod_dav_svn-1.7.10-1.2.mga3
+      lib64svn0-1.7.10-1.2.mga3
+      lib64svn-gnome-keyring0-1.7.10-1.2.mga3
+      lib64svnjavahl1-1.7.10-1.2.mga3
+      lib64svn-kwallet0-1.7.10-1.2.mga3
+      perl-SVN-1.7.10-1.2.mga3
+      perl-svn-devel-1.7.10-1.2.mga3
+      python-svn-1.7.10-1.2.mga3
+      python-svn-devel-1.7.10-1.2.mga3
+      ruby-svn-1.7.10-1.2.mga3
+      ruby-svn-devel-1.7.10-1.2.mga3
+      subversion-1.7.10-1.2.mga3
+      subversion-devel-1.7.10-1.2.mga3
+      subversion-doc-1.7.10-1.2.mga3
+      subversion-gnome-keyring-devel-1.7.10-1.2.mga3
+      subversion-kwallet-devel-1.7.10-1.2.mga3
+      subversion-server-1.7.10-1.2.mga3
+      subversion-tools-1.7.10-1.2.mga3
+      svn-javahl-1.7.10-1.2.mga3 
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9843
