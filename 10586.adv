@@ -27,3 +27,4 @@ description: |
   XSA-58/CVE-2013-1432: Page reference counting error due to XSA-45/CVE-2013-1918 fixes
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10586
+ID: MGASA-2013-0197
