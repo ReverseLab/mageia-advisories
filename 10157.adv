@@ -14,3 +14,4 @@ description: |
   (Note, lib64 should be replaced with lib on i586 installaations.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10157
+ID: MGAA-2013-0043
