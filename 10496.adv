@@ -1,0 +1,15 @@
+type: security
+subject: Updated python-pymongo packages fix CVE-2013-2132
+CVE:
+ - CVE-2013-2132
+src:
+  3:
+   core:
+     - python-pymongo-2.5-1.1.mga3
+description: |
+  PyMongo before 2.5.2 is prone to a denial-of-service vulnerability. An
+  attacker can remotely trigger a NULL pointer dereference causing MongoDB
+  to crash (CVE-2013-2132).
+references:
+ - http://www.debian.org/security/2013/dsa-2705
+ - https://bugs.mageia.org/show_bug.cgi?id=10496
