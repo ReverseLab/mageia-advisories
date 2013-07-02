@@ -1,0 +1,20 @@
+type: bugfix
+subject: Updated mercurial-server packages fix failure to install properly
+src:
+  2:
+   core:
+     - mercurial-server-1.2-6.3.mga2
+  3:
+   core:
+     - mercurial-server-1.3-3.3.mga3
+description: |
+  mercurial-server packages would not install correctly, there were problems
+  with user creation and file ownership.
+
+  The updated packages correct these issues and allow proper installation of
+  mercurial-server, however the update is unable to do so automatically.
+
+  Please remove any broken mercurial-server packages previously installed
+  before installing the updated package.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=3770
