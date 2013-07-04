@@ -1,0 +1,22 @@
+type: security
+subject: Updated opera package fixes security vulnerability
+src:
+  2:
+   nonfree:
+     - opera-12.16-1.mga2.nonfree
+  3:
+   nonfree:
+     - opera-12.16-1.mga3.nonfree
+description: |
+  Replaced code signing certificate
+  
+  Opera Software recently experienced an attack on the internal infrastructure.
+  Following best practices, Opera Software is replacing signing certificates in
+  Opera with newly issued certificates. Certificates in Opera include the code
+  signing certificate for desktop binaries and the signing certificate for
+  automatic updates to browser.js. Opera's rootstore was not affected by the
+  attack and certificates used for accessing HTTPS websites are unchanged by
+  this update.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10693
+ - http://www.opera.com/security/advisory/1048
