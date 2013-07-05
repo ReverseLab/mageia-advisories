@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated poedit package fixes translation memory
+src:
+  3:
+   core:
+     - poedit-1.5.4-2.1.mga3
+description: |
+  This update of poedit adds back 'translation memory' capabilities that
+  were missing because of a bad buildrequire (db4-devel)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10635
