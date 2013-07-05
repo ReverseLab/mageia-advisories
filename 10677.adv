@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated evince package fixes opening pdf files
+src:
+  3:
+   core:
+     - evince-3.7.1-2.1.mga3
+description: |
+  This update for evince adds a require on gsettings-desktop-schemas which
+  prevents it crashing when opening a pdf file.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10677
