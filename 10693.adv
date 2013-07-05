@@ -1,5 +1,5 @@
 type: security
-subject: Updated opera package fixes security vulnerability
+subject: Updated opera packages replace code signing certificate
 src:
   2:
    nonfree:
@@ -8,7 +8,7 @@ src:
    nonfree:
      - opera-12.16-1.mga3.nonfree
 description: |
-  Replaced code signing certificate
+  Opera 12.16 contains a replaced code signing certificate.
   
   Opera Software recently experienced an attack on the internal infrastructure.
   Following best practices, Opera Software is replacing signing certificates in
