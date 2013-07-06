@@ -9,3 +9,4 @@ description: |
   prevents it crashing when opening a pdf file.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10677
+ID: MGAA-2013-0050
