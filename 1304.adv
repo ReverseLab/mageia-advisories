@@ -12,3 +12,4 @@ description: |
   which allowed the bash history to fill up with mc internal commands.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=1304
+ID: MGAA-2013-0051
