@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated gscan2pdf package fixes tesseract integration
+src:
+  3:
+   core:
+     - gscan2pdf-1.0.6-2.2.mga3
+description: |
+  This updates gscan2pdf-1.0.6-2.mga3.noarch.rpm to
+  gscan2pdf-1.0.6-2.2.mga3.noarch.rpm. Correcting
+  a problem including tesseract.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10402
