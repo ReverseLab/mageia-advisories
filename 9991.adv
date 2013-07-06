@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated grub2 package fixes memtest86+ boot option
+src:
+  3:
+   core:
+     - grub2-2.00-46.2.mga3
+description: |
+  Grub2 would not show a boot option for memtest86+ if it was installed.
+  The updated packages allow grub2 to show an option to boot memtest86+
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9991
