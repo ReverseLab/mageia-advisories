@@ -9,3 +9,4 @@ description: |
   were missing because of a bad buildrequire (db4-devel)
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10635
+ID: MGAA-2013-0048
