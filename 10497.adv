@@ -1,0 +1,24 @@
+type: security
+subject: Updated rubygem-passenger package fixes CVE-2013-2119
+CVE:
+ - CVE-2013-2119
+src:
+  3:
+   core:
+     - rubygem-passenger-3.0.21-2.mga3
+description: |
+  Phusion Passenger’s code did not always create temporary files and directories
+  in a secure manner. Temporary files and directories were sometimes created
+  with a predictable filename. A local attacker can pre-create temporary files,
+  resulting in a denial of service. In addition, this vulnerability allows a
+  local attacker to run arbitrary code as another user, by hijacking temporary
+  files (CVE-2013-2119).
+
+  The rubygem-passenger package has been upgraded to version 3.0.21, which fixes
+  this issue, as well as many others although at the moment has some issues 
+  which will be fixed with a further update (mga#10728).
+references:
+ - http://blog.phusion.nl/2013/05/29/phusion-passenger-3-0-21-released/
+ - http://blog.phusion.nl/2013/05/29/phusion-passenger-4-0-5-released/
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-June/108443.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10497
