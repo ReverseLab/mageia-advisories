@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated nodejs package fixes V8 and other dependencies
+src:
+  2:
+   core:
+     - nodejs-0.8.25-1.mga2
+description: |
+  This update of nodejs is to provide a better release as the one in
+  core/release if very outdated. Moreover, this package now use bundled v8
+  as requested to avoid using buggy v8 package (mga#8567) and now, we are
+  not using bundled deps (only v8) as before.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=8567
+ - https://bugs.mageia.org/show_bug.cgi?id=10691
