@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated homebank package fixes segmentation fault on 64-bit systems
+src:
+  3:
+   core:
+     - homebank-4.4-3.1.mga3
+description: |
+  Updated homebank package fixes a segmentation fault on 64-bit systems when
+  opening saved data. eg. the example data when first used
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=8792
