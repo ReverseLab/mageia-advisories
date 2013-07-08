@@ -1,0 +1,21 @@
+type: security
+subject: Updated php-radius packages fix CVE-2013-2220
+CVE:
+ - CVE-2013-2220
+src:
+  2:
+   core:
+     - php-radius-1.2.7-1.mga2
+  3:
+   core:
+     - php-radius-1.2.7-1.mga3
+description: |
+  Updated php-radius package fixes security vulnerability:
+
+  Fix a security issue in radius_get_vendor_attr() by enforcing checks
+  of the VSA length field against the buffer size (CVE-2013-2220).
+references:
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2220
+ - http://pecl.php.net/package-changelog.php?package=radius&release=1.2.7
+ - http://www.mandriva.com/en/support/security/advisories/advisory/MDVSA-2013:192/
+ - https://bugs.mageia.org/show_bug.cgi?id=10642
