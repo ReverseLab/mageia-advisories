@@ -1,0 +1,15 @@
+type: bugfix
+subject: Updated mgarepo package to fix hang of "mgarepo up", and documentation.
+src:
+  2:
+   core:
+     - mgarepo-1.10.5-1.mga2
+description: |
+  mgarepo would apparently hang if a merge conflict were encountered while
+  performing an "mgarepo up" command (mga#952).
+  The help text for the putsrpm -l option fixed (mga#4053)
+  Documented putsrpm in the man page (mga#4055)
+  Fixed the regexp used to escape rpm macros
+  Added an additional requires on python-cheetah.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=952

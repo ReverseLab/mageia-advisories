@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated mgarepo package to fix hang of "mgarepo up".
+src:
+  3:
+   core:
+     - mgarepo-1.10.5-1.mga3
+description: |
+  mgarepo would apparently hang if a merge conflict were encountered while
+  performing an "mgarepo up" command (mga#952).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=952
