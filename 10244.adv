@@ -1,0 +1,16 @@
+type: bugfix
+subject: Updated backintime packages provide fixes functionality.
+src:
+  3:
+   core:
+     - backintime-1.0.24-2.1.mga3
+     - python-keyring-1.4-1.mga3
+description: |
+  Updating backintime-kde, and backintime-gnome, and adding python-keyring
+  - check keyring backend only if password is needed
+  - GtkWarning: Unknown property: GtkLabel.margin-top
+  - restore permission failed on “Full rsync mode”
+  Plus additional changes listed in the changelog.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10244
+ - http://backintime.le-web.org/change-log/
