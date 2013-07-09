@@ -7,7 +7,7 @@ src:
    core:
      - rubygem-passenger-3.0.21-2.mga3
 description: |
-  Phusion Passenger’s code did not always create temporary files and directories
+  Phusion Passengers code did not always create temporary files and directories
   in a secure manner. Temporary files and directories were sometimes created
   with a predictable filename. A local attacker can pre-create temporary files,
   resulting in a denial of service. In addition, this vulnerability allows a
