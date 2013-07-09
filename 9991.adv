@@ -9,3 +9,4 @@ description: |
   The updated packages allow grub2 to show an option to boot memtest86+
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=9991
+ID: MGAA-2013-0055
