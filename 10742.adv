@@ -1,0 +1,30 @@
+type: security
+subject: Updated flash-player-plugin packages fix multiple security vulnerabilities
+CVE:
+ - CVE-2013-3344
+ - CVE-2013-3345
+ - CVE-2013-3347
+src:
+  2:
+   core:
+     - flash-player-plugin-11.2.202.297-1.mga2.nonfree
+  3:
+   core:
+     - flash-player-plugin-11.2.202.297-1.mga3.nonfree
+description: |
+  Adobe Flash Player 11.2.202.297 contains fixes to critical security
+  vulnerabilities found in earlier versions. These vulnerabilities could
+  cause a crash and potentially allow an attacker to take control of the
+  affected system.
+
+  This update resolves a heap buffer overflow vulnerability that could lead
+  to code execution (CVE-2013-3344). 
+
+  This update resolves a memory corruption vulnerability that could lead to
+  code execution (CVE-2013-3345). 
+
+  This update resolves an integer overflow when resampling a user-supplied
+  PCM buffer (CVE-2013-3347).
+references:
+ - http://www.adobe.com/support/security/bulletins/apsb13-17.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10742
