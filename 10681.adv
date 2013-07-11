@@ -1,0 +1,17 @@
+type: bugfix
+subject: Updated gambas3-gb-gtk package fixes a bug with the clipboard
+src:
+  2:
+   core:
+     - gambas3-3.1.1-1.2.mga2
+description: |
+  When the user/gambas developer tries to copy an Image into the clipboard,
+  passing through a Picture object, the data he will put into the memory
+  will be corrupted.
+
+  This update adds no new features.
+references:
+ - http://sourceforge.net/mailarchive/message.php?msg_id=29819594
+ - http://www.mageiaonline.it/sites/default/files/ClipboardImageTest-3.1.tar.bz2
+ - https://bugs.mageia.org/show_bug.cgi?id=7522
+ - https://bugs.mageia.org/show_bug.cgi?id=10681
