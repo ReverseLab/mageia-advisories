@@ -6,10 +6,10 @@ CVE:
  - CVE-2013-3347
 src:
   2:
-   core:
+   nonfree:
      - flash-player-plugin-11.2.202.297-1.mga2.nonfree
   3:
-   core:
+   nonfree:
      - flash-player-plugin-11.2.202.297-1.mga3.nonfree
 description: |
   Adobe Flash Player 11.2.202.297 contains fixes to critical security
