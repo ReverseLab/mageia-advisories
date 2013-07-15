@@ -1,0 +1,24 @@
+type: bugfix
+subject: Updated apache packages cure a timeout when stopping or restarting the service
+src:
+  3:
+   core:
+     - apache-2.4.4-7.1.mga3
+description: |
+  A problem was found with the httpd systemd unit files that frequently
+  resulted in a deadlock when stopping or restarting the service.
+
+  The unit file was configured to use the httpd -k graceful-stop command
+  to stop the running instances of httpd. This command is asynchronous but
+  systemd expects the command to be synchronous, only exiting once all the
+  processes have stopped. This causes systemd to send a SIGTERM to all
+  processes remaining in the cgroup which can cause problems for the
+  shutdown process resulting in the deadlock. systemd would later send a
+  SIGKILL which would properly kill the processes but this would only happen
+  after a timeout.
+
+  This update changes the systemd unit to not send the initial SIGTERM and
+  thus waits for the processes to exit normally before (if things don't go
+  well) calling SIGKILL as before after a timeout.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10591
