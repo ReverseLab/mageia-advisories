@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated wvstreams packages fix an error when connecting via ppp
+src:
+  3:
+   core:
+     - wvstreams-4.6.1-7.1.mga3
+description: |
+  This is a bugfix update to wvstreams to fix a bug that caused an error
+  message when connecting to a ppp dial connection.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10470
