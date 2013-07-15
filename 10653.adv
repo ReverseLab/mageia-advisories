@@ -1,0 +1,48 @@
+type: security
+subject: Updated kernel-linus package fixes security issues
+CVE:
+ - CVE-2013-0231
+ - CVE-2013-2850
+ - CVE-2013-2852
+src:
+  2:
+   core:
+     - kernel-linus-3.4.52-1.mga2
+description: |
+  This kernel update provides the upstream 3.4.52 kernel and fixes
+  the follwing security issues:
+  
+  The pciback_enable_msi function in the PCI backend driver 
+  (drivers/xen/pciback/conf_space_capability_msi.c) in Xen for the Linux
+  kernel 2.6.18 and 3.8 allows guest OS users with PCI device access to
+  cause a denial of service via a large number of kernel log messages.
+  (CVE-2013-0231 / XSA-43)
+  
+  Heap-based buffer overflow in the iscsi_add_notunderstood_response function
+  in drivers/target/iscsi/iscsi_target_parameters.c in the iSCSI target
+  subsystem in the Linux kernel through 3.9.4 allows remote attackers to
+  cause a denial of service (memory corruption and OOPS) or possibly execute
+  arbitrary code via a long key that is not properly handled during
+  construction of an error-response packet.
+  A reproduction case requires patching open-iscsi to send overly large
+  keys. Performing discovery in a loop will Oops the remote server.
+  (CVE-2013-2850)
+  
+  Format string vulnerability in the b43_request_firmware function in
+  drivers/net/wireless/b43/main.c in the Broadcom B43 wireless driver in
+  the Linux kernel through 3.9.4 allows local users to gain privileges by
+  leveraging root access and including format string specifiers in an
+  fwpostfix modprobe parameter, leading to improper construction of an
+  error message. (CVE-2013-2852)
+  
+  Other fixes:
+  For other -stable fixes, read the referenced changelogs
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10653
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.46
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.47
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.48
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.49
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.50
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.51
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.52
