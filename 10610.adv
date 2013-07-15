@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated denyhosts package fixes a failure to start
+src:
+  3:
+   core:
+     - denyhosts-2.6-4.1.mga3
+description: |
+  Denyhosts doesn't start unless rsyslog is installed as denyhosts relies
+  on log files in /var/log/.
+  
+  The update fixes this.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10610
