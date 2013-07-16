@@ -1,0 +1,15 @@
+type: bugfix
+subject: Updated ssmtp packages fix world readable config file
+src:
+  2:
+   core:
+     - ssmtp-2.64-5.1.mga2
+  3:
+   core:
+     - ssmtp-2.64-8.1.mga3
+description: |
+  Under some scenarios, the password used to authenticate to external
+  smtp servers is stored in the config file with world readable permissions.
+  This update fixes this.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10701
