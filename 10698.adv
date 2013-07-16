@@ -44,3 +44,4 @@ description: |
 references:
  - http://kernel.ubuntu.com/git?p=ubuntu/linux.git;h=refs/heads/linux-3.8.y;a=shortlog
  - https://bugs.mageia.org/show_bug.cgi?id=10698
+ID: MGASA-2013-0214
