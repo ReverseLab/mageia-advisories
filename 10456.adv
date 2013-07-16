@@ -1,7 +1,8 @@
 type: security
-subject: Updated php packages fix security vulnerability
+subject: Updated php packages fix security vulnerabilies
 CVE:
  - CVE-2013-2110
+ - CVE-2013-4635
 src:
   3:
    core:
@@ -13,9 +14,15 @@ description: |
   Heap based buffer overflow in quoted_printable_encode() in PHP before
   version 5.4.16 (CVE-2013-2110).
 
+  Integer overflow in the SdnToJewish function in jewish.c in the Calendar
+  component in PHP before 5.3.26 and 5.4.x before 5.4.16 allows
+  context-dependent attackers to cause a denial of service (application hang)
+  via a large argument to the jdtojewish function. (CVE-2013-4635)
+  
   This update provides PHP version 5.4.16 which fixes this as well as
   several other issues.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10456
  - http://www.php.net/ChangeLog-5.php
+ - http://lwn.net/Vulnerabilities/559055/
 ID: MGASA-2013-0172
