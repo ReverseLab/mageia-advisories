@@ -12,8 +12,8 @@ src:
    core:
      - kernel-rt-3.8.13.4-0.rt14.2.mga3
 description: |
-  This kernel-rt update provides the extended stable 3.8.13.4 kernel and fixes
-  the follwing security issues:
+  This kernel-rt update provides the extended stable 3.8.13.4 kernel and
+  fixes the follwing security issues:
   
   The pciback_enable_msi function in the PCI backend driver 
   (drivers/xen/pciback/conf_space_capability_msi.c) in Xen for the Linux
@@ -68,3 +68,4 @@ description: |
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10699
  - http://kernel.ubuntu.com/git?p=ubuntu/linux.git;h=refs/heads/linux-3.8.y;a=shortlog
+ID: MGASA-2013-0215
