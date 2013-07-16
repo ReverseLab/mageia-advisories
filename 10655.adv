@@ -2,18 +2,40 @@ type: security
 subject: Updated kernel-vserver package fixes security issues
 CVE:
  - CVE-2013-0231
+ - CVE-2013-2232
+ - CVE-2013-2234
+ - CVE-2013-2237
  - CVE-2013-2850
  - CVE-2013-2852
 src:
   2:
    core:
-     - kernel-vserver-3.4.51-1.mga2
+     - kernel-vserver-3.4.52-1.mga2
 description: |
+  This kernel-vserver update provides the upstream 3.4.52 kernel and fixes
+  the follwing security issues:
+  
   The pciback_enable_msi function in the PCI backend driver 
   (drivers/xen/pciback/conf_space_capability_msi.c) in Xen for the Linux
   kernel 2.6.18 and 3.8 allows guest OS users with PCI device access to
   cause a denial of service via a large number of kernel log messages.
   (CVE-2013-0231 / XSA-43)
+  
+  ipv6: ip6_sk_dst_check() must not assume ipv6 dst
+  It's possible to use AF_INET6 sockets and to connect to an IPv4
+  destination. After this, socket dst cache is a pointer to a rtable,
+  not rt6_info. This bug can be exploited by local non-root users
+  to trigger various corruptions/crashes (CVE-2013-2232)
+  
+  af_key: fix info leaks in notify messages
+  key_notify_sa_flush() and key_notify_policy_flush() miss to
+  initialize the sadb_msg_reserved member of the broadcasted message
+  and thereby leak 2 bytes of heap memory to listeners (CVE-2013-2234)
+  
+  af_key: initialize satype in key_notify_policy_flush()
+  key_notify_policy_flush() miss to nitialize the sadb_msg_satype member
+  of the broadcasted message and thereby leak heap memory to listeners
+  (CVE-2013-2237)
   
   Heap-based buffer overflow in the iscsi_add_notunderstood_response function
   in drivers/target/iscsi/iscsi_target_parameters.c in the iSCSI target
@@ -44,4 +66,5 @@ references:
  - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.49
  - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.50
  - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.51
+ - https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.52
 ID: MGASA-2013-0212
