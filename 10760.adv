@@ -1,0 +1,24 @@
+type: security
+subject: Updated php packages fix CVE-2013-4113
+CVE:
+ - CVE-2013-4113
+src:
+  2:
+   core:
+     - php-5.3.27-1.mga2
+     - php-apc-3.1.13-1.9.mga2
+     - php-eaccelerator-0.9.6.1-10.11.mga2
+     - php-firebird-5.3.27-1.mga2
+     - php-gd-bundled-5.3.27-1.mga2
+     - php-pdo_firebird-5.3.27-1.mga2
+     - php-timezonedb-2013.4-1.mga2
+description: |
+  * Fixed PHP bug #65236 (heap corruption in xml parser) (CVE-2013-4113).
+
+  Additionally the php-timezonedb packages has been upgraded to the latest
+  version (2013.4).
+references:
+ - http://www.php.net/ChangeLog-5.php#5.3.27
+ - https://bugs.php.net/bug.php?id=65236
+ - http://www.openwall.com/lists/oss-security/2013/07/11/6
+ - https://bugs.mageia.org/show_bug.cgi?id=10760
