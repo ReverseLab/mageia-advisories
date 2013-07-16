@@ -22,3 +22,4 @@ description: |
   well) calling SIGKILL as before after a timeout.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10591
+ID: MGAA-2013-0060
