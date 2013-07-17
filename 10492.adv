@@ -2,6 +2,7 @@ type: security
 subject: Updated php package fixes several issues
 CVE:
  - CVE-2013-2110
+ - CVE-2013-4635
 src:
   2:
    core:
@@ -14,9 +15,17 @@ src:
      - php-pdo_firebird-5.3.26-1.mga2
 description: |
   Fixed php bug #64879 (Heap based buffer overflow in quoted_printable_encode,
-  CVE-2013-2110). See the changelog for additional bug fixes.
+  CVE-2013-2110).
+  
+  Integer overflow in the SdnToJewish function in jewish.c in the Calendar
+  component in PHP before 5.3.26 and 5.4.x before 5.4.16 allows
+  context-dependent attackers to cause a denial of service (application hang)
+  via a large argument to the jdtojewish function. (CVE-2013-4635)
+  
+  See the changelog for additional bug fixes.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10492
  - https://bugs.php.net/bug.php?id=64879
  - http://www.php.net/ChangeLog-5.php
+ - http://lwn.net/Vulnerabilities/559055
 ID: MGASA-2013-0176
