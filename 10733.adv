@@ -1,0 +1,15 @@
+type: bugfix
+subject: Updated bino package fixes 'Cannot handle audio with sample format fltp' error
+src:
+  3:
+   core:
+     - bino-1.4.2-1.mga3
+description: |
+  Updated packages fix bino not working with the recent version of ffmpeg
+  available in Mageia 3.
+
+  It would previously complain that it 
+  'Cannot handle audio with sample format fltp'
+references:
+ - http://savannah.nongnu.org/bugs/index.php?38176
+ - https://bugs.mageia.org/show_bug.cgi?id=10733
