@@ -5,7 +5,7 @@ CVE:
 src:
   2:
    core:
-     - libxml2-2.7.8-14.20120229.7.mga2
+     - libxml2-2.7.8-14.20120229.8.mga2
   3:
    core:
      - libxml2-2.9.0-5.2.mga3
