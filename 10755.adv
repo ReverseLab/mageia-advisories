@@ -1,0 +1,46 @@
+type: security
+subject: Updated moodle package fixes multiple security vulnerabilities
+CVE:
+ - CVE-2013-2242
+ - CVE-2013-2243
+ - CVE-2013-2244
+ - CVE-2013-2245
+ - CVE-2013-2246
+src:
+  3:
+   core:
+     - moodle-2.4.5-1.mga3
+description: |
+  Flash files distributed with the YUI library in Moodle before 2.4.5 may have
+  allowed for cross-site scripting attacks (MSA-13-0025).
+
+  Privacy settings for the IMS-LTI (External tool) module in Moodle before
+  2.4.5 were not able to be changed so personal information was always
+  transferred (MSA-13-0026).
+
+  Users were able to access a daemon-mode Chat activity in Moodle before 2.4.5
+  without the required capability (CVE-2013-2242).
+
+  It was possible to determine answers from ID values in Lesson activity
+  matching questions in Moodle before 2.4.5 (CVE-2013-2243).
+
+  Conditional access rule values for user fields were able to contain unescaped
+  HTML/JS that would be output to users in Moodle before 2.4.5 (CVE-2013-2244).
+
+  When impersonating another user using RSS tokens in Moodle before 2.4.5, an
+  error was displayed, but block information relevant to the person being
+  impersonated was shown (CVE-2013-2245).
+
+  The Feedback module in Moodle before 2.4.5 was showing personal information 
+  to users without the needed capability (CVE-2013-2246).
+references:
+ - https://moodle.org/mod/forum/discuss.php?d=232496
+ - https://moodle.org/mod/forum/discuss.php?d=232497
+ - https://moodle.org/mod/forum/discuss.php?d=232498
+ - https://moodle.org/mod/forum/discuss.php?d=232500
+ - https://moodle.org/mod/forum/discuss.php?d=232501
+ - https://moodle.org/mod/forum/discuss.php?d=232502
+ - https://moodle.org/mod/forum/discuss.php?d=232503
+ - http://docs.moodle.org/dev/Moodle_2.4.5_release_notes
+ - https://moodle.org/mod/forum/discuss.php?d=232108
+ - https://bugs.mageia.org/show_bug.cgi?id=10755
