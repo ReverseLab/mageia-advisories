@@ -1,0 +1,20 @@
+type: security
+subject: Updated owncloud package fixes security vulnerabilities
+CVE:
+ - CVE-Not-Assigned-Yet
+src:
+  3:
+   core:
+     - owncloud-5.0.9-1.mga3
+description: |
+  XSS vulnerability in “Share Interface” (oC-SA-2013-029).
+
+  Authentication bypass in “user_webdavauth” (oC-SA-2013-030).
+
+  This update provides OwnCloud 5.0.9, which fixes these issues, as well as
+  several other bugs.
+references:
+ - http://owncloud.org/about/security/advisories/oC-SA-2013-029/
+ - http://owncloud.org/about/security/advisories/oC-SA-2013-030/
+ - http://owncloud.org/changelog/
+ - https://bugs.mageia.org/show_bug.cgi?id=10763
