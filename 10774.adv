@@ -1,0 +1,19 @@
+type: security
+subject: Updated libxml2 packages fix CVE-2013-2877
+CVE:
+ - CVE-2013-2877
+src:
+  2:
+   core:
+     - libxml2-2.7.8-14.20120229.7.mga2
+  3:
+   core:
+     - libxml2-2.9.0-5.2.mga3
+description: |
+  It was discovered that libxml2 incorrectly handled documents that end
+  abruptly. If a user or automated system were tricked into opening a
+  specially crafted document, an attacker could possibly cause libxml2 to
+  crash, resulting in a denial of service (CVE-2013-2877).
+references:
+ - http://www.ubuntu.com/usn/usn-1904-1/
+ - https://bugs.mageia.org/show_bug.cgi?id=10774
