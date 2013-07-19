@@ -1,0 +1,17 @@
+type: bugfix
+subject: Updated drakguard package fixes multiple bugs.
+src:
+  2:
+   core:
+     - drakguard-0.7.14-1.mga2
+  3:
+   core:
+     - drakguard-0.7.14-1.mga3
+description: |
+  This is a bugfix update to fix a number of bugs in drakguard.
+  mga 6400 -Use local time when setting internet blackout periods.
+  mga 9195 -ACL on ext4 partitions.
+  mga 7775 -Allow urpmi network access when parental controls enabled.
+  mga 10513 -Allow drakguard to work with squid 3.2
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9195
