@@ -1,0 +1,17 @@
+type: security
+subject: Updated mediawiki packages fix security vulnerability
+CVE:
+ - CVE-2013-2114
+src:
+  3:
+   core:
+     - mediawiki-1.20.6-1.2.mga3
+description: |
+  MediaWiki user Marco discovered that security checks for file uploads were
+  not being run when the file was uploaded in chunks through the API. This
+  option has been available to users who can upload files since MediaWiki
+  1.19 (CVE-2013-2114).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10784
+ - http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-May/000131.html
+ - https://www.mediawiki.org/wiki/Release_notes/1.20#MediaWiki_1.20.6
