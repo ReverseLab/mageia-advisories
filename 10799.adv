@@ -1,0 +1,19 @@
+type: security
+subject: Updated xlockmore package fixes security vulnerability
+CVE:
+ - CVE-2013-4143
+src:
+  2:
+   core:
+     - xlockmore-5.38-2.2.mga2
+  3:
+   core:
+     - xlockmore-5.41-2.1.mga3
+description: |
+  xlockmore before 5.43 contains a security flaw related to potential NULL
+  pointer dereferences when authenticating via glibc 2.17+'s crypt() function.
+  Under certain conditions the NULL pointers can trigger a crash in xlockmore
+  effectively bypassing the screen lock (CVE-2013-4143).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10799
+ - http://openwall.com/lists/oss-security/2013/07/16/8
