@@ -1,0 +1,35 @@
+type: security
+subject: Updated virtualbox package fixes security issue
+CVE:
+ - CVE-2013-3792
+src:
+  2:
+   core:
+     - kmod-vboxadditions-4.2.16-1.mga2
+     - kmod-virtualbox-4.2.16-1.mga2
+     - virtualbox-4.2.16-1.mga2
+  3:
+   core:
+     - kmod-vboxadditions-4.2.16-1.mga3
+     - kmod-virtualbox-4.2.16-1.mga3
+     - virtualbox-4.2.16-1.mga3
+description: |
+  This virtualbox update provides the 4.2.16 maintenance release,
+  which fixes the following security issue:
+  
+  Thomas Dreibholz has discovered a vulnerability in Oracle VirtualBox,
+  which can be exploited by malicious, local users in a guest virtual
+  machine to cause a DoS (Denial of Service).
+  The vulnerability is caused due to an unspecified error and can be
+  exploited to render the host network connection and the virtual machine
+  instance unresponsive or locking the host by issuing e.g. the "tracepath"
+  command.
+  Successful exploitation requires the target virtual machine to be
+  equipped with a paravirtualised network adapter (virtio-net).
+  (CVE-2013-3792)
+  
+  For other changes in this update, see the referenced changelog.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10736
+ - https://www.virtualbox.org/wiki/Changelog
+ - https://www.virtualbox.org/ticket/11863
