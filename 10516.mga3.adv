@@ -1,0 +1,34 @@
+type: security
+subject: Updated squid packages fix security vulnerabilities
+CVE:
+ - CVE-2013-4115
+ - CVE-2013-4123
+src:
+  3:
+   core:
+     - squid-3.2.10-1.4.mga3
+description: |
+  Due to incorrect data validation Squid is vulnerable to a buffer overflow
+  attack when processing specially crafted HTTP requests. This problem allows
+  any trusted client or client script who can generate HTTP requests to trigger
+  a buffer overflow in Squid, resulting in a termination of the Squid service
+  (CVE-2013-4115).
+  
+  Due to incorrect data validation Squid is vulnerable to a denial of service
+  attack when processing specially crafted HTTP requests. This problem allows
+  any client who can generate HTTP requests to perform a denial of service
+  attack on the Squid service (CVE-2013-4123).
+  
+  Also, due to being renamed in Squid 3.2, the Squid external acl helpers for
+  matching against IP addresses and LDAP groups were not selected to be built
+  in the squid package for Mageia 3.
+  
+  This has been corrected and these helpers are now included.  Additionally,
+  the helpers for eDirectory IP address lookups and matching LDAP groups using
+  Kerberos credentials have also been included.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10516.mga3
+ - http://www.squid-cache.org/Advisories/SQUID-2013_2.txt
+ - http://www.squid-cache.org/Advisories/SQUID-2013_3.txt
+ - ftp://ftp.fu-berlin.de/unix/www/squid/archive/3.2/squid-3.2.0.9-RELEASENOTES.html#ss2.4
+ - http://www.squid-cache.org/Doc/man/

@@ -1,0 +1,17 @@
+type: security
+subject: Updated squid packages fix security vulnerability
+CVE:
+ - CVE-2013-4115
+src:
+  2:
+   core:
+     - squid-3.1.19-4.4.mga2
+description: |
+  Due to incorrect data validation Squid is vulnerable to a buffer overflow
+  attack when processing specially crafted HTTP requests. This problem allows
+  any trusted client or client script who can generate HTTP requests to trigger
+  a buffer overflow in Squid, resulting in a termination of the Squid service
+  (CVE-2013-4115).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10516.mga2
+ - http://www.squid-cache.org/Advisories/SQUID-2013_2.txt
