@@ -1,0 +1,10 @@
+type: bugfix
+subject: Updated iin package fixes configuration issues.
+src:
+  2:
+   core:
+     - inn-2.5.3-3.2.mga2
+description: |
+  Previously, inn would not start, as installed. This update corrects the problem.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=7876
