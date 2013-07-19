@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated drakxtools package fixes several issues
+src:
+  2:
+   core:
+     - drakxtools-14.22.4-1.1.mga2
+description: |
+  - diskdrake offers to resize NTFS again
+  - drakboot fixes removing LVM entries when saving /etc/fstab (mga#5811)
+  - drakclock fixes crashing if timezones cannot be listed (mga#6787)
+  Last but not least, it fixes a rare crash when a banner icon doesn't exist (mga#5223)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9741
