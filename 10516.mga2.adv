@@ -13,5 +13,5 @@ description: |
   a buffer overflow in Squid, resulting in a termination of the Squid service
   (CVE-2013-4115).
 references:
- - https://bugs.mageia.org/show_bug.cgi?id=10516.mga2
+ - https://bugs.mageia.org/show_bug.cgi?id=10516
  - http://www.squid-cache.org/Advisories/SQUID-2013_2.txt

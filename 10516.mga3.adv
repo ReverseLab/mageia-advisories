@@ -27,7 +27,7 @@ description: |
   the helpers for eDirectory IP address lookups and matching LDAP groups using
   Kerberos credentials have also been included.
 references:
- - https://bugs.mageia.org/show_bug.cgi?id=10516.mga3
+ - https://bugs.mageia.org/show_bug.cgi?id=10516
  - http://www.squid-cache.org/Advisories/SQUID-2013_2.txt
  - http://www.squid-cache.org/Advisories/SQUID-2013_3.txt
  - ftp://ftp.fu-berlin.de/unix/www/squid/archive/3.2/squid-3.2.0.9-RELEASENOTES.html#ss2.4
