@@ -7,7 +7,7 @@ src:
    core:
      - owncloud-5.0.9-1.mga3
 description: |
-  XSS vulnerability in “Share Interface” (oC-SA-2013-029).
+  XSS vulnerability in "Share Interface" (oC-SA-2013-029).
 
   Authentication bypass in “user_webdavauth” (oC-SA-2013-030).
 

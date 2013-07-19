@@ -1,0 +1,19 @@
+type: security
+subject: Updated nagstamon package fixes security vulnerability
+CVE:
+ - CVE-2013-4114
+src:
+  3:
+   core:
+     - nagstamon-0.9.9-1.1.mga3
+description: |
+  A user details information exposure flaw was found in the way Nagstamon
+  performed automated requests to get information about available updates.
+  Remote attackers could use this flaw to obtain user credentials for servers
+  monitored by the desktop status monitor due to their improper (base64
+  encoding-based) encoding in the HTTP request, when the HTTP Basic
+  authentication scheme was used (CVE-2013-4114).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10779
+ - http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4114
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-July/111698.html
