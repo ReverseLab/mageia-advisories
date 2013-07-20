@@ -5,7 +5,7 @@ CVE:
 src:
   3:
    core:
-     - nagstamon-0.9.9-1.1.mga3
+     - nagstamon-0.9.9-1.2.mga3
 description: |
   A user details information exposure flaw was found in the way Nagstamon
   performed automated requests to get information about available updates.
