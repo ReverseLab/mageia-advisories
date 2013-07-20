@@ -1,0 +1,16 @@
+type: security
+subject: Updated darktable package fixes security vulnerability
+CVE:
+ - CVE-2013-2126
+src:
+  3:
+   core:
+     - darktable-1.2-1.1.mga3
+description: |
+  A double-free error exits when handling damaged full-color within Foveon and
+  sRAW files in libraw, which is embedded in darktable (CVE-2013-2126).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10427
+ - http://secunia.com/advisories/53547/
+ - http://www.libraw.org/news/libraw-0-15-2
+ - http://lists.opensuse.org/opensuse-updates/2013-06/msg00193.html
