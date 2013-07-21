@@ -1,7 +1,5 @@
 type: security
 subject: Updated owncloud package fixes security vulnerabilities
-CVE:
- - CVE-Not-Assigned-Yet
 src:
   3:
    core:
