@@ -5,7 +5,7 @@ CVE:
 src:
   2:
    core:
-     - mediawiki-1.20.6-1.1.mga2
+     - mediawiki-1.20.6-1.2.mga2
      - mediawiki-math-1.0-1.110614.1.mga2
      - mediawiki-ldapauthentication-2.0c-1.mga2
      - mediawiki-graphviz-0.9-1.89857.3.mga2
