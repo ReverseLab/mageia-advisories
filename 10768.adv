@@ -8,7 +8,7 @@ src:
      - libkdcraw-4.8.5-1.2.mga2
 description: |
   This update fixes a security issue due to a possible double-free()
-  on error recovery on damaged full-color (Foveon,   sRAW) files.
+  on error recovery on damaged full-color (Foveon, sRAW) files.
   (CVE 2013-2126)
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10768
