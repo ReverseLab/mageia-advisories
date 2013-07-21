@@ -1,0 +1,21 @@
+type: security
+subject: Updated python-suds package fixes security vulnerability
+CVE:
+ - CVE-2013-2217
+src:
+  2:
+   core:
+     - python-suds-0.4.1-2.1.mga2
+  3:
+   core:
+     - python-suds-0.4.1-3.1.mga3
+description: |
+  An insecure temporary directory use flaw was found in the way python-suds
+  performed initialization of its internal file-based URL cache (predictable
+  location was used for directory to store the cached files). A local attacker
+  could use this flaw to conduct symbolic link attacks, possibly leading to
+  their ability for example the SOAP .wsdl metadata to redirect queries to a
+  different host, than originally intended (CVE-2013-2217).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10791
+ - http://lists.opensuse.org/opensuse-updates/2013-07/msg00062.html
