@@ -1,0 +1,24 @@
+type: security
+subject: Updated mediawiki packages fix security vulnerabilities
+CVE:
+ - unspecified
+src:
+  2:
+   core:
+     - mediawiki-1.20.6-1.1.mga2
+     - mediawiki-math-1.0-1.110614.1.mga2
+     - mediawiki-ldapauthentication-2.0c-1.mga2
+     - mediawiki-graphviz-0.9-1.89857.3.mga2
+description: |
+  This update provides MediaWiki 1.20.6, fixing several unspecified security
+  issues.  This replaces the MediaWiki 1.16.5 version, which has been EOL
+  upstream for quite some time now, that was shipped with Mageia 2.
+  
+  MediaWiki removed the Math extension for the 1.18 release, but it is now
+  available separately.  It has been packaged in the mediawiki-math package.
+  
+  The mediawiki-graphviz and mediawiki-ldapauthentication packages have also
+  been updated to work with the new MediaWiki packages.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=3448
+ - http://www.mediawiki.org/wiki/Release_notes
