@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated mediawiki-ldapauthentication package fixes plugin use.
+src:
+  3:
+   core:
+     - mediawiki-ldapauthentication-2.0c-1.mga3
+description: |
+  This update provides an updated LdapAuthenticaion plugin meant for use with
+  MediaWiki 1.20.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10785
