@@ -11,3 +11,4 @@ description: |
   Last but not least, it fixes a rare crash when a banner icon doesn't exist (mga#5223)
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=9741
+ID: MGAA-2013-0066
