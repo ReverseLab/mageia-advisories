@@ -1,0 +1,64 @@
+type: security
+subject: Updated chromium-browser-stable packages fix security vulnerabilities
+CVE:
+ - CVE-2013-2853
+ - CVE-2013-2867
+ - CVE-2013-2868
+ - CVE-2013-2869
+ - CVE-2013-2870
+ - CVE-2013-2871
+ - CVE-2013-2873
+ - CVE-2013-2875
+ - CVE-2013-2876
+ - CVE-2013-2878
+ - CVE-2013-2879
+ - CVE-2013-2880
+src:
+  2:
+   core:
+     - chromium-browser-stable-28.0.1500.71-1.mga2
+  3:
+   core:
+     - chromium-browser-stable-28.0.1500.71-1.mga3
+   tainted:
+     - chromium-browser-stable-28.0.1500.71-1.mga3.tainted
+description: |
+  Updated chromium-browser-stable packages fix security vulnerabilities:
+
+  The HTTPS implementation does not ensure that headers are terminated by
+  \r\n\r\n (carriage return, newline, carriage return, newline)
+  (CVE-2013-2853).
+
+  Chrome does not properly prevent pop-under windows (CVE-2013-2867).
+
+  common/extensions/sync_helper.cc proceeds with sync operations for NPAPI
+  extensions without checking for a certain plugin permission setting
+  (CVE-2013-2868).
+
+  Denial of service (out-of-bounds read) via a crafted JPEG2000 image
+  (CVE-2013-2869).
+
+  Use-after-free vulnerability in network sockets (CVE-2013-2870).
+
+  Use-after-free vulnerability in input handling (CVE-2013-2871).
+
+  Use-after-free vulnerability in resource loading (CVE-2013-2873).
+
+  Out-of-bounds read in SVG file handling (CVE-2013-2875).
+
+  Chrome does not properly enforce restrictions on the capture of screenshots
+  by extensions, which could lead to information disclosure from previous page
+  visits (CVE-2013-2876).
+
+  Out-of-bounds read in text handling (CVE-2013-2878).
+
+  The circumstances in which a renderer process can be considered a trusted
+  process for sign-in and subsequent sync operations were not propertly
+  checked (CVE-2013-2879).
+
+  The chrome 28 development team found various issues from internal fuzzing,
+  audits, and other studies (CVE-2013-2880).
+references:
+ - http://googlechromereleases.blogspot.com/2013/07/stable-channel-update.html
+ - http://www.debian.org/security/2013/dsa-2724
+ - https://bugs.mageia.org/show_bug.cgi?id=10804
