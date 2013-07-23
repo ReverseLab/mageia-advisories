@@ -1,0 +1,18 @@
+type: security
+subject: Updated file-roller package fixes CVE-2013-4668
+CVE:
+ - CVE-2013-4668
+src:
+  3:
+   core:
+     - file-roller-3.6.4-1.mga3
+description: |
+  Updated file-roller package fixes security vulnerability:
+
+  Directory traversal vulnerability in File Roller 3.6.x before 3.6.4 when
+  libarchive is used, allows remote attackers to create arbitrary files via a
+  crafted archive that is not properly handled in a "Keep directory structure"
+  action, related to fr-archive-libarchive.c and fr-window.c (CVE-2013-4668).
+references:
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-July/111666.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10782
