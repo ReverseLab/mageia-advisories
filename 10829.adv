@@ -1,0 +1,19 @@
+type: security
+subject: Updated qemu package fixes CVE-2013-2231
+CVE:
+ - CVE-2013-2231
+src:
+  3:
+   core:
+     - qemu-1.2.0-8.2.mga3
+description: |
+  Updated qemu packages fix security vulnerability:
+
+  An unquoted search path flaw was found in the way the QEMU Guest Agent
+  service installation was performed on Windows. Depending on the permissions
+  of the directories in the unquoted search path, a local, unprivileged user
+  could use this flaw to have a binary of their choosing executed with SYSTEM
+  privileges (CVE-2013-2231).
+references:
+ - https://rhn.redhat.com/errata/RHSA-2013-1100.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10829
