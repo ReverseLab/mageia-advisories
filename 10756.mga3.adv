@@ -1,0 +1,35 @@
+type: security
+subject: Updated apache packages fix security vulnerabilities
+CVE:
+ - CVE-2013-1896
+ - CVE-2013-2249
+src:
+  3:
+   core:
+     - apache-2.4.4-7.4.mga3
+description: |
+  Updated apache packages fix security vulnerabilities:
+
+  mod_dav.c in the Apache HTTP Server before 2.4.6 does not properly
+  determine whether DAV is enabled for a URI, which allows remote
+  attackers to cause a denial of service (segmentation fault) via a
+  MERGE request in which the URI is configured for handling by the
+  mod_dav_svn module, but a certain href attribute in XML data refers
+  to a non-DAV URI (CVE-2013-1896).
+
+  An unspecified error in Apache HTTP Server within the mod_session_dbd
+  module related to the handling of the dirty flag during saving of the
+  sessions has an unknown impact and remote attack vector (CVE-2013-2249).
+
+  Also, a minor issue causing httpd to not be restarted when installing
+  or upgrading certain web applications, as well as an issue with the
+  web application configuration files when upgrading from Mageia 2, both
+  due to the moving of web applications configuration files to the
+  /etc/httpd/conf/sites.d directory in Mageia 3, have been corrected.
+references:
+ - http://www.apache.org/dist/httpd/CHANGES_2.4
+ - http://xforce.iss.net/xforce/xfdb/85871
+ - http://www.mandriva.com/en/support/security/advisories/mbs1/MDVSA-2013:193/
+ - https://bugs.mageia.org/show_bug.cgi?id=10178
+ - https://bugs.mageia.org/show_bug.cgi?id=10275
+ - https://bugs.mageia.org/show_bug.cgi?id=10756
