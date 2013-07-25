@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated Qt & QtWebkit packages fixes many bugs.
+src:
+  3:
+   core:
+     - qt4-4.8.5-1.2.mga3
+     - qtwebkit-2.3.2-1.1.mga3
+description: |
+  This package provides the last bugfixe release for Qt & QtWebkit updating them
+  to 4.8.5 & 2.3.2
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10766
+ - http://download.qt-project.org/official_releases/qt/4.8/4.8.5/changes-4.8.5
+ - http://blog.qt.digia.com/blog/2013/07/02/qt-4-8-5-released
