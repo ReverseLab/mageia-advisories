@@ -1,0 +1,22 @@
+type: security
+subject: Updated apache packages fix CVE-2013-1896
+CVE:
+ - CVE-2013-1896
+src:
+  2:
+   core:
+     - apache-2.2.25-1.mga2
+description: |
+  Updated apache packages fix security vulnerability:
+
+  mod_dav.c in the Apache HTTP Server before 2.2.25 does not properly
+  determine whether DAV is enabled for a URI, which allows remote
+  attackers to cause a denial of service (segmentation fault) via a
+  MERGE request in which the URI is configured for handling by the
+  mod_dav_svn module, but a certain href attribute in XML data refers
+  to a non-DAV URI (CVE-2013-1896).
+references:
+ - http://httpd.apache.org/security/vulnerabilities_22.html
+ - http://www.apache.org/dist/httpd/CHANGES_2.2.25
+ - http://www.mandriva.com/en/support/security/advisories/mbs1/MDVSA-2013:193/
+ - https://bugs.mageia.org/show_bug.cgi?id=10756.mga2
