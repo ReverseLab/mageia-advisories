@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated kmozillahelper package fixes opening folder for firefox downloads.
+src:
+  3:
+   core:
+     - kmozillahelper-0.6.4-1.mga3
+description: |
+  It prevents Firefox from wrongly opening an annoying window after
+  downloading a file and clicking on the open   the containing folder.
+  The affected rpm is kmozillahelper-0.6.4-1mga3 
+  (Mozilla KDE Integration)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9857
