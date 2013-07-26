@@ -8,3 +8,4 @@ description: |
   Previously, inn would not start, as installed. This update corrects the problem.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=7876
+ID: MGAA-2013-0069
