@@ -1,0 +1,16 @@
+type: bugfix
+subject: Updated python packages fix many bugs
+src:
+  3:
+   core:
+     - python-2.7.5-1.1.mga3
+description: |
+  This is a 2.7 series bugfix release. It includes hundreds of bugfixes
+  over 2.7.3.
+
+  This also fixes a Mageia specific bug with python-virtualenv (mga #10102)
+  "Unable to install Python packages with C extensions via pip and virtualenv"
+references:
+  - http://hg.python.org/cpython/file/ab05e7dd2788/Misc/NEWS
+  - https://bugs.mageia.org/show_bug.cgi?id=10102
+  - https://bugs.mageia.org/show_bug.cgi?id=10761
