@@ -1,5 +1,5 @@
 type: bugfix
-subject: Updated iin package fixes configuration issues.
+subject: Updated inn package fixes configuration issues.
 src:
   2:
    core:
