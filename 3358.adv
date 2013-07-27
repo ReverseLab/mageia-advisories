@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated python-virtualenv package fixes setting of PYTHONDONTWRITEBYTECODE
+src:
+  2:
+   core:
+     - python-virtualenv-1.7.1.2-1.1.mga2
+description: |
+  python-virtualenv no longer sets PYTHONDONTWRITEBYTECODE, so it won't
+  over-ride the user's environment and choice.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=3358
