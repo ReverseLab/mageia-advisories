@@ -1,0 +1,37 @@
+type: security
+subject: Updated wireshark package fixes security vulnerabilities
+CVE:
+ - CVE-2013-4927
+ - CVE-2013-4929
+ - CVE-2013-4930
+ - CVE-2013-4931
+ - CVE-2013-4932
+ - CVE-2013-4933
+ - CVE-2013-4934
+ - CVE-2013-4935
+src:
+  2:
+   core:
+     - wireshark-1.6.16-1.1.mga2
+  3:
+   core:
+     - wireshark-1.8.9-1.mga3
+description: |
+  The Bluetooth SDP dissector could go into a large loop (CVE-2013-4927).
+  The DIS dissector could go into a large loop (CVE-2013-4929).
+  The DVB-CI dissector could crash (CVE-2013-4930).
+  The GSM RR dissector (and possibly others) could go into a large loop (CVE-2013-4931).
+  The GSM A Common dissector could crash (CVE-2013-4932).
+  The Netmon file parser could crash (CVE-2013-4933, CVE-2013-4934).
+  The ASN.1 PER dissector could crash (CVE-2013-4935).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10858
+ - http://www.wireshark.org/security/wnpa-sec-2013-45.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-47.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-48.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-49.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-50.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-51.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-52.html
+ - http://www.wireshark.org/docs/relnotes/wireshark-1.8.9.html
+ - http://www.wireshark.org/news/20130726.html
