@@ -1,0 +1,17 @@
+type: bugfix
+subject: Updated libreoffice package fixes bugs.
+src:
+  3:
+   core:
+     - libreoffice-4.0.4.2-2.mga3
+description: |
+  This updates libreoffice from 4.0.3 to 4.0.4, which is a pure bug fixes
+  release.   It's also no longer compiled with the --enable-mergelibs
+  option which seemed to cause crashes for some users.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10848
+ - https://bugs.mageia.org/show_bug.cgi?id=10812
+ - http://download.documentfoundation.org/libreoffice/src/bugs-libreoffice-4-0-4-release-4.0.4.1.log
+ - http://download.documentfoundation.org/libreoffice/src/bugs-libreoffice-4-0-4-release-4.0.4.2.log
+ - http://download.documentfoundation.org/libreoffice/src/commits-libreoffice-4-0-4-release-4.0.4.1.log
+ - http://download.documentfoundation.org/libreoffice/src/commits-libreoffice-4-0-4-release-4.0.4.2.log
