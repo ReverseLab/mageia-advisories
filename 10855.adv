@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated mageia-xfce-config package fixes xfce-mixer applet
+src:
+  3:
+   core:
+     - mageia-xfce-config-3-2.2.mga3
+description: |
+  xfce-mixer applet was not being displayed in the panel.
+  The update fixes this.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10855
