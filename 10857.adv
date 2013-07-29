@@ -1,0 +1,17 @@
+type: bugfix
+subject: Updated gnutls package fixes license conflict
+src:
+  3:
+   core:
+     - gnutls-3.1.13-1.mga3
+description: |
+  This update fixes a license conflict issue for other software that may
+  be linked against it, including Wireshark, as well as several other bugs.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10857
+ - http://gnutls.org/news.html
+ - http://lists.gnutls.org/pipermail/gnutls-devel/2013-February/006177.html
+ - http://lists.gnutls.org/pipermail/gnutls-devel/2013-March/006201.html
+ - http://lists.gnutls.org/pipermail/gnutls-devel/2013-May/006227.html
+ - http://lists.gnutls.org/pipermail/gnutls-devel/2013-June/006276.html
+ - http://lists.gnutls.org/pipermail/gnutls-devel/2013-July/006327.html
