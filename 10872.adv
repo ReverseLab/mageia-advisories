@@ -3,6 +3,7 @@ subject: Updated phpmyadmin packages fix security vulnerabilities
 CVE:
  - CVE-2013-4995
  - CVE-2013-4996
+ - CVE-2013-4997
  - CVE-2013-4998
  - CVE-2013-5000
  - CVE-2013-5002
@@ -32,7 +33,8 @@ description: |
   JavaScript execution by entering arbitrary HTML (PMASA-2013-9).
   Also, due to not properly validating the version.json file, which is fetched
   from the phpMyAdmin.net website, could lead to an XSS attack, if a crafted
-  version.json file would be presented (PMASA-2013-11)(CVE-2013-4996).
+  version.json file would be presented (PMASA-2013-11).
+  (CVE-2013-4996, CVE-2013-4997)
 
   By calling some scripts that are part of phpMyAdmin in an unexpected way, it
   is possible to trigger phpMyAdmin to display a PHP error message which
