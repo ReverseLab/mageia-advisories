@@ -1,0 +1,26 @@
+type: security
+subject: Updated gnupg package fixes security vulnerability
+CVE:
+ - CVE-2013-4242
+src:
+  2:
+   core:
+     - gnupg-1.4.12-1.2.mga2
+     - libgcrypt-1.5.0-2.1.mga2
+  3:
+   core:
+     - gnupg-1.4.14-1.mga3
+     - libgcrypt-1.5.3-1.mga3
+description: |
+  Yarom and Falkner discovered that RSA secret keys in applications
+  using GnuPG 1.x, and using the libgcrypt library, could be leaked via a
+  side channel attack, where a malicious local user could obtain private
+  key information from another user on the system (CVE-2013-4242).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10850
+ - http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000329.html
+ - http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000330.html
+ - http://eprint.iacr.org/2013/448
+ - http://www.debian.org/security/2013/dsa-2730
+ - http://www.debian.org/security/2013/dsa-2731
+ - http://www.mandriva.com/en/support/security/advisories/advisory/MDVSA-2013:205/
