@@ -1,0 +1,17 @@
+type: bugfix
+subject: Updated dansguardian package fixes start time and unneeded dependencies.
+src:
+  3:
+   core:
+     - dansguardian-2.10.1.1-9.1.mga3
+description: |
+  This is a bugfix update for dansguardian to prevent unnecessary packages
+  being installed along with dansguardian (mga#10772). One effect of
+  installing these extra packages is that dansguardian may take several
+  minutes to start working after a reboot.
+  
+  Users upgrading dansguardian are recommended to uninstall the
+  c-icap-server package unless it is specifically required. Other services
+  which may have been installed are postfix, apache,cherokee, and lighttp.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10884
