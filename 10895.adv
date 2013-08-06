@@ -1,0 +1,21 @@
+type: security
+subject: Updated subversion packages fixes security vulnerability
+CVE:
+ - CVE-2013-4131
+src:
+  2:
+   core:
+     - subversion-1.7.11-1.mga2
+  3:
+   core:
+     - subversion-1.7.11-1.mga3
+description: |
+  Subversion's mod_dav_svn Apache HTTPD server module will trigger an assertion
+  on some requests made against a revision root. This can lead to a DoS. If
+  assertions are disabled it will trigger a read overflow which may cause a
+  SEGFAULT (or equivalent) or undefined behavior. Commit access is required to
+  exploit this (CVE-2013-4131).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10895
+ - https://subversion.apache.org/security/CVE-2013-4131-advisory.txt
+ - http://lists.opensuse.org/opensuse-updates/2013-08/msg00000.html
