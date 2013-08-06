@@ -1,0 +1,24 @@
+type: security
+subject: Updated xymon package fixes security vulnerability.
+CVE:
+ - CVE-2013-4173
+src:
+  2:
+   core:
+     - xymon-4.2.3-11.mga2
+  3:
+   core:
+     - xymon-4.2.3-13.mga3
+description: |
+  A security vulnerability has been found in version 4.x of the
+  Xymon Systems & Network Monitor tool 
+  
+  The error permits a remote attacker to delete files on the server
+  running the Xymon trend-data daemon "xymond_rrd".
+  File deletion is done with the privileges of the user that Xymon is
+  running with, so it is limited to files available to the userid
+  running the Xymon service. This includes all historical data stored
+  by the Xymon monitoring system. (CVE-2013-4173)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10874
+ - http://openwall.com/lists/oss-security/2013/07/27/3
