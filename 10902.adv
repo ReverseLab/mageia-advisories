@@ -1,0 +1,39 @@
+type: security
+subject: Updated vlc package fixes security vulnerability.
+CVE:
+ - CVE-2013-3565
+src:
+  2:
+   core:
+     - vlc-2.0.8-0.2.mga2
+   tainted:
+     - vlc-2.0.8-0.2.mga2.tainted
+  3:
+   core:
+     - vlc-2.0.8-2.mga3
+   tainted:
+     - vlc-2.0.8-2.mga3.tainted
+description: |
+  2.0.8
+  Demux:
+  * sgimb: use after free
+   (fixes #8724 https://trac.videolan.org/vlc/ticket/8724 )
+  * Improve resistance and checking against malformed MKV files
+    (Check element size before reading it. This should avoid integer
+    overflows inside the libebml causing heap buffer overflow.
+    Since new called by the lib is limited to SIZE_MAX bytes.)
+             
+     Access:
+     * qtsound: fix crash when freeing memory
+             
+  2.0.7
+  Input:
+  * Fix memory exhaustion vulnerability when playing specifically crafted
+    playlist files.
+    (stream_ReadLine: correctly return an error on overflow
+    fixes #7361 https://trac.videolan.org/vlc/ticket/7361 )
+                    
+  HTTP Interface:
+  * lua http: Fix two xss vulnerabilities (CVE-2013-3565)
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10902
