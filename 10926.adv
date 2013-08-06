@@ -1,0 +1,19 @@
+type: security
+subject: Updated samba package fixes security vulnerability
+CVE:
+ - CVE-2013-4124
+src:
+  2:
+   core:
+     - samba-3.6.5-2.3.mga2
+  3:
+   core:
+     - samba-3.6.15-1.1.mga3
+description: |
+  Integer overflow in the read_nttrans_ea_list function in nttrans.c in
+  smbd in Samba 3.x before 3.5.22, 3.6.x before 3.6.17, and 4.x before
+  4.0.8 allows remote attackers to cause a denial of service (memory
+  consumption) via a malformed packet (CVE-2013-4124).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10926
+ - http://www.samba.org/samba/security/CVE-2013-4124
