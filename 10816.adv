@@ -1,0 +1,19 @@
+type: security
+subject: Updated lcms2 packages fixes security vulnerability
+CVE:
+ - CVE-2013-4160
+src:
+  2:
+   core:
+     - lcms2-2.5-1.mga2
+  3:
+   core:
+     - lcms2-2.5-1.mga3
+description: |
+  It was discovered that Little CMS did not properly verify certain memory
+  allocations. If a user or automated system using Little CMS were tricked
+  into opening a specially crafted file, an attacker could cause Little CMS
+  to crash (CVE-2013-4160).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10816
+ - http://www.ubuntu.com/usn/usn-1911-1/
