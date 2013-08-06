@@ -1,0 +1,18 @@
+type: security
+subject: Updated evolution-data-server package fixes security vulnerability.
+CVE:
+ - CVE-2013-4166
+src:
+  2:
+   core:
+     - evolution-data-server-3.4.4-1.1.mga2
+  3:
+   core:
+     - evolution-data-server-3.6.3-1.1.mga3
+description: |
+  Yves-Alexis Perez discovered that Evolution Data Server did not properly
+  select GPG recipients. Under certain circumstances, this could result in
+  Evolution encrypting email to an unintended recipient (CVE-2013-4166).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10896
+ - http://www.ubuntu.com/usn/usn-1922-1/
