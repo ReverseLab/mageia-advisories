@@ -1,0 +1,22 @@
+type: security
+subject: Updated putty packages fixes security vulnerability
+CVE:
+ - CVE-2013-4852
+src:
+  2:
+   core:
+     - putty-0.62-1.1.mga2
+  3:
+   core:
+     - putty-0.62-2.1.mga3
+description: |
+  PuTTY versions 0.62 and earlier - as well as all software that integrates
+  these versions of PuTTY - are vulnerable to an integer overflow leading
+  to heap overflow during the SSH handshake before authentication, caused
+  by improper bounds checking of the length parameter received from the
+  SSH server. This allows remote attackers to cause denial of service, and
+  may have more severe impact on the operation of software that uses PuTTY
+  code (CVE-2013-4852).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10925
+ - http://www.search-lab.hu/advisories/secadv-20130722
