@@ -1,24 +1,45 @@
 type: security
 subject: Updated putty and filezilla packages fixes security vulnerability
 CVE:
+ - CVE-2013-4206
+ - CVE-2013-4207
+ - CVE-2013-4208
  - CVE-2013-4852
 src:
   2:
    core:
-     - putty-0.62-1.1.mga2
-     - filezilla-3.5.3-1.1.mga2
+     - putty-0.63-1.mga2
+     - filezilla-3.7.3-1.mga2
   3:
    core:
-     - putty-0.62-2.1.mga3
-     - filezilla-3.6.0.2-2.1.mga3
+     - putty-0.63-1.mga3
+     - filezilla-3.7.3-1.mga3
 description: |
-  PuTTY versions 0.62 and earlier - as well as all software that integrates
-  these versions of PuTTY - are vulnerable to an integer overflow leading
-  to heap overflow during the SSH handshake before authentication, caused
-  by improper bounds checking of the length parameter received from the
-  SSH server. This allows remote attackers to cause denial of service, and
-  may have more severe impact on the operation of software that uses PuTTY
-  code (CVE-2013-4852).
+  PuTTY versions 0.62 and earlier - as well as all software that
+  integrates   these versions of PuTTY - are vulnerable to an integer
+  overflow leading to heap overflow during the SSH handshake before
+  authentication, caused by improper bounds checking of the length
+  parameter received from the SSH server. This allows remote attackers
+  to cause denial of service, and may have more severe impact on the
+  operation of software that uses PuTTY code (CVE-2013-4852).
+
+  PuTTY versions 0.62 and earlier - as well as all software that
+  integrates these versions of PuTTY - are vulnerable to a heap-corrupting
+  buffer underrun bug in the modmul function which performs modular
+  multiplication (CVE-2013-4206).
+
+  PuTTY versions 0.62 and earlier - as well as all software that
+  integrates these versions of PuTTY - are vulnerable to a buffer overflow
+  vulnerability in the calculation of modular inverses when verifying a
+  DSA signature (CVE-2013-4207).
+
+  PuTTY versions 0.62 and earlier - as well as all software that
+  integrates these versions of PuTTY - are vulnerable to private keys left
+  in memory after being used by PuTTY tools (CVE-2013-4208).
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10925
+ - http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-modmul.html
+ - http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-bignum-division-by-zero.html
+ - http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/private-key-not-wiped.html
+ - http://www.openwall.com/lists/oss-security/2013/08/06/13
  - http://www.search-lab.hu/advisories/secadv-20130722
