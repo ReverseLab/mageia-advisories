@@ -37,3 +37,4 @@ description: |
   * lua http: Fix two xss vulnerabilities (CVE-2013-3565)
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10902
+ID: MGASA-2013-0241
