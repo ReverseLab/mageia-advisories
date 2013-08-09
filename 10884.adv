@@ -15,3 +15,4 @@ description: |
   which may have been installed are postfix, apache,cherokee, and lighttp.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10884
+ID: MGAA-2013-0078
