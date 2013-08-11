@@ -17,3 +17,4 @@ description: |
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10926
  - http://www.samba.org/samba/security/CVE-2013-4124
+ID: MGASA-2013-0246
