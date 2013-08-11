@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated gnofract4d package fixes requires on gcc.
+src:
+  2:
+   core:
+     - gnofract4d-3.14-1.1.mga2
+  3:
+   core:
+     - gnofract4d-3.14-4.1.mga3
+description: |
+  The gnofract4d program requires gcc, to function properly. This update
+  adds a requires on gcc, to ensure it will be installed.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9091
