@@ -1,0 +1,20 @@
+type: security
+subject: Updated otrs package fixes security vulnerability
+CVE:
+ - CVE-2013-4717
+src:
+  2:
+   core:
+     - otrs-3.2.9-1.mga2
+  3:
+   core:
+     - otrs-3.2.9-1.mga3
+description: |
+  It was discovered that otrs2, the Open Ticket Request System, does not
+  properly sanitise user-supplied data that is used on SQL queries. An
+  attacker with a valid agent login could exploit this issue to craft
+  SQL queries by injecting arbitrary SQL code through manipulated URLs
+  (CVE-2013-4717).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10927
+ - http://www.debian.org/security/2013/dsa-2733
