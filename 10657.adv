@@ -1,0 +1,10 @@
+type: bugfix
+subject: Updated exo package fixes opening magnet links
+src:
+  3:
+   core:
+     - exo-0.10.2-3.1.mga3
+description: |
+  Updated exo package fixes opening magnet links
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10657
