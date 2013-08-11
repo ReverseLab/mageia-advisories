@@ -10,3 +10,4 @@ description: |
   conflict between python-pyasn1 and pyasn1.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10891
+ID: MGAA-2013-0081
