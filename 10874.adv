@@ -8,7 +8,7 @@ src:
      - xymon-4.2.3-11.mga2
   3:
    core:
-     - xymon-4.2.3-13.mga3
+     - xymon-4.2.3-14.mga3
 description: |
   A security vulnerability has been found in version 4.x of the
   Xymon Systems & Network Monitor tool 
