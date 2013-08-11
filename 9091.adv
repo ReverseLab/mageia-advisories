@@ -12,3 +12,4 @@ description: |
   adds a requires on gcc, to ensure it will be installed.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=9091
+ID: MGAA-2013-0079
