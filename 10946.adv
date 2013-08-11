@@ -1,0 +1,76 @@
+type: security
+subject: Updated firefox and thunderbird packages fix security vulnerabilities
+CVE:
+ - CVE-2013-1701
+ - CVE-2013-1709
+ - CVE-2013-1710
+ - CVE-2013-1713
+ - CVE-2013-1714
+ - CVE-2013-1717
+src:
+  2:
+   core:
+     - firefox-17.0.8-1.mga2
+     - firefox-l10n-17.0.8-1.mga2
+     - thunderbird-17.0.8-1.mga2
+     - thunderbird-l10n-17.0.8-1.mga2
+  3:
+   core:
+     - firefox-17.0.8-1.mga3
+     - firefox-l10n-17.0.8-1.mga3
+     - thunderbird-17.0.8-1.mga3
+     - thunderbird-l10n-17.0.8-1.mga3
+description: |
+  Mozilla developers identified and fixed several memory safety
+  bugs in the browser engine used in Firefox and other Mozilla-based
+  products. Some of these bugs showed evidence of memory corruption under
+  certain circumstances, and we presume that with enough effort at least
+  some of these could be exploited to run arbitrary code (CVE-2013-1701).
+  
+  Mozilla security researcher moz_bug_r_a4 reported that through an
+  interaction of frames and browser history it was possible to make
+  the browser believe attacker-supplied content came from the location
+  of a previous page in browser history. This allows for cross-site
+  scripting (XSS) attacks by loading scripts from a misrepresented
+  malicious site through relative locations and the potential access
+  of stored credentials of a spoofed site (CVE-2013-1709).
+  
+  Mozilla security researcher moz_bug_r_a4 reported a mechanism to
+  execute arbitrary code or a cross-site scripting (XSS) attack when
+  Certificate Request Message Format (CRMF) request is generated in
+  certain circumstances (CVE-2013-1710).
+  
+  Security researcher Cody Crews reported that some Javascript components
+  will perform checks against the wrong uniform resource identifier
+  (URI) before performing security sensitive actions. This will return
+  an incorrect location for the originator of the call. This could be
+  used to bypass same-origin policy, allowing for cross-site scripting
+  (XSS) or the installation of malicious add-ons from third-party pages
+  (CVE-2013-1713).
+  
+  Mozilla community member Federico Lanusse reported a mechanism where
+  a web worker can violate same-origin policy and bypass cross-origin
+  checks through XMLHttpRequest. This could allow for cross-site
+  scripting (XSS) attacks by web workers (CVE-2013-1714).
+  
+  Security researcher Georgi Guninski reported an issue with Java
+  applets where in some circumstances the applet could access files on
+  the local system when loaded using the a file:/// URI and violate file
+  origin policy due to interaction with the codebase parameter. This
+  affects applets running on the local file system. Mozilla developer
+  John Schoenick later discovered that fixes for this issue were
+  inadequate and allowed the invocation of Java applets to bypass
+  security checks in additional circumstances. This could lead to
+  untrusted Java applets having read-only access on the local files
+  system if used in conjunction with a method to download a file to a
+  known or guessable path (CVE-2013-1717).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10946
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-63.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-68.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-69.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-72.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-73.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-75.html
+ - http://www.mozilla.org/security/known-vulnerabilities/firefoxESR.html
+ - http://www.mandriva.com/en/support/security/advisories/advisory/MDVSA-2013:210/
