@@ -5,9 +5,8 @@ src:
    core:
      - python-virtualenv-1.9.1-1.1.mga3
 description: |
-  Advisory text to describe the update.
-  Wrap lines at ~75 chars.
   Update to upstream 1.9.1 because of security issues with the bundled
   python-pip in older releases and to allow download from PyPI over SSL.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10956
+ID: MGAA-2013-0082
