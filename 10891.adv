@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated python-pyasn1 and python-pyasn1-modules package fixes file conflict.
+src:
+  3:
+   core:
+     - python-pyasn1-0.1.6-5.2.mga3
+     - python-pyasn1-modules-0.0.4-5.1.mga3
+description: |
+  Updated python-pyasn1 and python-pyasn1-modules packages fix a file
+  conflict between python-pyasn1 and pyasn1.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10891
