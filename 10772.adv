@@ -1,0 +1,10 @@
+type: bugfix
+subject: Updated c-icap package fixes service startup
+src:
+  3:
+   core:
+     - c-icap-0.2.5-4.2.mga3
+description: |
+  Updated c-icap package fixes service startup
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10772
