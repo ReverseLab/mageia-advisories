@@ -8,3 +8,4 @@ description: |
   Updated c-icap package fixes service startup
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10772
+ID: MGAA-2013-0083
