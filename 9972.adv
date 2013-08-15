@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated nrpe packages fix incorrect permissions on the pid directory
+src:
+  2:
+   core:
+     - nrpe-2.14-1.1.mga2
+  3:
+   core:
+     - nrpe-2.14-1.1.mga3
+description: |
+  Various issues with the directory that the NRPE service uses to store its
+  PID file have been corrected.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9972
