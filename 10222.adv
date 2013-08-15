@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated lua5.1 package fixes a conflict when upgrading from Mageia 2
+src:
+  3:
+   core:
+     - lua5.1-5.1.5-2.1.mga3
+description: |
+  lua5.1 has been fixed to avoid a conflict with lua when upgrading from
+  Mageia 2.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10222
