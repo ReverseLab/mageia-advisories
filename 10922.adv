@@ -1,0 +1,50 @@
+type: security
+subject: Updated chromium-browser-stable packages fix security vulnerabilities
+CVE:
+ - CVE-2013-2881
+ - CVE-2013-2882
+ - CVE-2013-2883
+ - CVE-2013-2884
+ - CVE-2013-2885
+ - CVE-2013-2886
+src:
+  2:
+   core:
+     - chromium-browser-stable-28.0.1500.95-1.mga2
+  3:
+   core:
+     - chromium-browser-stable-28.0.1500.95-1.mga3
+   tainted:
+     - chromium-browser-stable-28.0.1500.95-1.mga3.tainted
+description: |
+  Updated chromium-browser-stable packages fix security vulnerabilities:
+
+  Karthik Bhargavan discovered a way to bypass the Same Origin Policy in frame
+  handling (CVE-2013-2881).
+
+  Cloudfuzzer discovered a type confusion issue in the V8 javascript library
+  (CVE-2013-2882).
+
+  Cloudfuzzer discovered a use-after-free issue in MutationObserver
+  (CVE-2013-2883).
+
+  Ivan Fratric of the Google Security Team discovered a use-after-free issue in
+  the DOM implementation (CVE-2013-2884).
+
+  Ivan Fratric of the Google Security Team discovered a use-after-free issue in
+  input handling (CVE-2013-2885).
+
+  The chrome 28 development team found various issues from internal fuzzing,
+  audits, and other studies (CVE-2013-2886).
+
+  This update provides version 28.0.1500.95, which fixes these issues.
+
+  Additionally, Google Sync should now work (mga#9851), and playing of media
+  files with certain codecs, such as mp3, should now work with the tainted
+  build (mga#10828) in Mageia 3.
+references:
+ - http://googlechromereleases.blogspot.com/2013/07/stable-channel-update_30.html
+ - https://bugs.mageia.org/show_bug.cgi?id=9851
+ - https://bugs.mageia.org/show_bug.cgi?id=10828
+ - http://www.debian.org/security/2013/dsa-2732
+ - https://bugs.mageia.org/show_bug.cgi?id=10922
