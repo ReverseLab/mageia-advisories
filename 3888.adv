@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated initscripts package fixes connection detection in draknetcenter
+src:
+  2:
+   core:
+     - initscripts-9.34-20.2.mga2
+description: |
+  mdv-network-event: use mageia.org instead of mandriva.com in dbus events
+
+  drakx-net is listening for events coming from mageia.org
+  This should fix detection of connection success/failure in net_applet,
+  draknetcenter and drakroam.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=3888
