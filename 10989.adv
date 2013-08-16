@@ -1,0 +1,26 @@
+type: security
+subject: Updated python packages fix CVE-2013-4328 and pip
+CVE:
+ - CVE-2013-4328
+src:
+  2:
+   core:
+     - python-2.7.3-2.4.mga2
+  3:
+   core:
+     - python-2.7.5-1.2.mga3
+description: |
+  Updated python packages fix security vulnerability:
+
+  Ryan Sleevi of the Google Chrome Security Team has discovered that Python's SSL
+  module doesn't handle NULL bytes inside subjectAltNames general names. This
+  could lead to a breach when an application uses ssl.match_hostname() to match
+  the hostname againt the certificate's subjectAltName's dNSName general names.
+  (CVE-2013-4328).
+
+  Additionally, an issue with installing Python packages with C extensions via
+  pip and virtualenv has been fixed in Mageia 3 (mga#10102).
+references:
+ - http://bugs.python.org/issue18709
+ - https://bugs.mageia.org/show_bug.cgi?id=10102
+ - https://bugs.mageia.org/show_bug.cgi?id=10989
