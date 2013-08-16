@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated terminology package fixes program startup.
+src:
+  3:
+   core:
+     - terminology-0.2.0-3.mga3
+description: |
+  The terminology package was missing requires on evas and elementary,
+  which prevented the program from starting. This update corrects the
+  problem.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10312
