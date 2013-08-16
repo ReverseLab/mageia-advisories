@@ -1,0 +1,22 @@
+type: security
+subject: Updated 389-ds-base package fixes security vulnerability
+CVE:
+ - CVE-2013-2219
+src:
+  3:
+   core:
+     - 389-ds-base-1.3.0.5-2.2.mga3
+description: |
+  It was discovered that the 389 Directory Server did not honor defined
+  attribute access controls when evaluating search filter expressions. A
+  remote attacker (with permission to query the Directory Server) could use
+  this flaw to determine the values of restricted attributes via a series of
+  search queries with filter conditions that used restricted attributes
+  (CVE-2013-2219).
+
+  Additionally, problems of wrong default group nobody (from upstream) as well
+  as the 389-ds server not starting after a reboot have been fixed (mga#10138).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10138
+ - https://bugs.mageia.org/show_bug.cgi?id=10889
+ - https://rhn.redhat.com/errata/RHSA-2013-1119.html
