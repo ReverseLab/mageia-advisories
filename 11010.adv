@@ -1,0 +1,18 @@
+type: security
+subject: Updated libimobiledevice packages fix CVE-2013-2142
+CVE:
+ - CVE-2013-2142
+src:
+  3:
+   core:
+     - libimobiledevice-1.1.4-4.1.mga3
+description: |
+  Updated libimobiledevice packages fix security vulnerability:
+
+  Paul Collins discovered that libimobiledevice incorrectly handled temporary
+  files. A local attacker could possibly use this issue to overwrite
+  arbitrary files and access device keys. In the default Ubuntu installation,
+  this issue should be mitigated by the Yama link restrictions (CVE-2013-2142).
+references:
+ - http://www.ubuntu.com/usn/usn-1927-1
+ - https://bugs.mageia.org/show_bug.cgi?id=11010
