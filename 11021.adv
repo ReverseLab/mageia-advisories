@@ -1,0 +1,15 @@
+type: bugfix
+subject: Updated terminology package fixes error messages
+src:
+  3:
+   core:
+     - terminology-0.2.0-4.mga3
+description: |
+If started from another terminal, Terminology would flood it with error
+messages for each character displayed such as below.
+
+ERR<7878>:termpty termptyesc.c:1318 _termpty_handle_seq() o
+
+This should not now happen.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11021
