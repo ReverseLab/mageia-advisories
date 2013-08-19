@@ -1,0 +1,20 @@
+type: security
+subject: Updated perl-Proc-ProcessTable packages fix CVE-2011-4363
+CVE:
+ - CVE-2011-4363
+src:
+  2:
+   core:
+     - perl-Proc-ProcessTable-0.480.0-1.mga2
+  3:
+   core:
+     - perl-Proc-ProcessTable-0.480.0-1.mga3
+description: |
+  Updated perl-Proc-ProcessTable package fixes security vulnerability:
+
+  ProcessTable.pm in the Proc::ProcessTable module 0.45 for Perl, when TTY
+  information caching is enabled, allows local users to overwrite arbitrary
+  files via a symlink attack on /tmp/TTYDEVS (CVE-2011-4363).
+references:
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-August/113068.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10928
