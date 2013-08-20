@@ -1,0 +1,19 @@
+type: security
+subject: Updated znc package fixes CVE-2013-2130
+CVE:
+ - CVE-2013-2130
+src:
+  3:
+   core:
+     - znc-1.0-2.1.mga3
+description: |
+  Updated znc packages fix security vulnerability:
+
+  Multiple vulnerabilities were reported in ZNC version 1.0 which can be
+  exploited by malicious authenticated users to cause a denial of service.
+  These flaws are due to errors when handling the "editnetwork", "editchan",
+  "addchan", and "delchan" page requests; they can be exploited to cause a
+  NULL pointer dereference (CVE-2013-2130).
+references:
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-August/114144.html
+ - https://bugs.mageia.org/show_bug.cgi?id=11034
