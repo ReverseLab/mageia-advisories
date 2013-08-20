@@ -1,0 +1,31 @@
+type: security
+subject: Updated libtiff packagess fix multiple security vulnerabilities
+CVE:
+ - CVE-2013-4231
+ - CVE-2013-4232
+src:
+  2:
+   core:
+     - libtiff-4.0.1-2.7.mga2
+  3:
+   core:
+     - libtiff-4.0.3-4.1.mga3
+description: |
+  Updated libtiff packages fix security vulnerabilities:
+
+  Pedro Ribeiro discovered a buffer overflow flaw in rgb2ycbcr, a tool to convert
+  RGB color, greyscale, or bi-level TIFF images to YCbCr images, and multiple
+  buffer overflow flaws in gif2tiff, a tool to convert GIF images to TIFF. A
+  remote attacker could provide a specially-crafted TIFF or GIF file that, when
+  processed by rgb2ycbcr and gif2tiff respectively, would cause the tool to crash
+  or, potentially, execute arbitrary code with the privileges of the user running
+  the tool (CVE-2013-4231)
+
+  Pedro Ribeiro discovered a use-after-free flaw in the t2p_readwrite_pdf_image()
+  function in tiff2pdf, a tool for converting a TIFF image to a PDF document. A
+  remote attacker could provide a specially-crafted TIFF file that, when processed
+  by tiff2pdf, would cause tiff2pdf to crash or, potentially, execute arbitrary
+  code with the privileges of the user running tiff2pdf (CVE-2013-4232).
+references:
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-August/114181.html
+ - https://bugs.mageia.org/show_bug.cgi?id=11035
