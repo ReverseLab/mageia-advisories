@@ -1,0 +1,48 @@
+type: security
+subject: Updated python3, bzr and some python packages fix security vulnerabilties
+CVE:
+ - CVE-2013-2099
+ - CVE-2013-4328
+src:
+  2:
+   core:
+     - python3-3.2.3-1.5.mga2
+     - python-tornado-2.2.1-1.1.mga2
+     - bzr-2.5.1-1.1.mga2
+  3:
+   core:
+     - python3-3.3.0-4.3.mga3
+     - python-pip-1.3.1-2.1.mga3
+     - python-tornado-2.3-2.1.mga3
+     - bzr-2.5.1-3.1.mga3
+     - python-requests-0.13.5-2.1.mga3
+     - python-virtualenv-1.9.1-1.2.mga3
+description: |
+  Updated python3 packages fix security vulnerabilities:
+
+  A denial of service flaw was found in the way SSL module implementation of
+  Python 3 performed matching of the certificate's name in the case it contained
+  many '*' wildcard characters. A remote attacker, able to obtain valid
+  certificate with its name containing a lot of '*' wildcard characters could use
+  this flaw to cause denial of service (excessive CPU consumption) by issuing
+  request to validate such a certificate for / to an application using the
+  Python's ssl.match_hostname() functionality (CVE-2013-2099).
+
+  Ryan Sleevi of the Google Chrome Security Team has discovered that Python's SSL
+  module doesn't handle NULL bytes inside subjectAltNames general names. This
+  could lead to a breach when an application uses ssl.match_hostname() to match
+  the hostname againt the certificate's subjectAltName's dNSName general names.
+  (CVE-2013-4328).
+
+  Additionally, a linking issue when compiling C extensions for Python 3 has been
+  fixed in Mageia 3 (mga#9395).
+
+  The CVE-2013-2099 issue also affects bzr, python-requests, python-tornado,
+  python-pip, and python-virtualenv, and those have been updated as well.
+references:
+ - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-2099
+ - http://bugs.python.org/issue18709
+ - https://bugs.mageia.org/show_bug.cgi?id=9395
+ - https://bugs.mageia.org/show_bug.cgi?id=10989
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-June/107957.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10391
