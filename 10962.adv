@@ -1,0 +1,10 @@
+type: bugfix
+subject: Updated vsftpd package fixes a user login issue
+src:
+  3:
+   core:
+     - vsftpd-3.0.2-2.1.mga3
+description: |
+  This update fixes a user login problem in vsftpd.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10962
