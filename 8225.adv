@@ -3,7 +3,7 @@ subject: Updated mandi/drakxnet package fixes interactive firewall/network monit
 src:
   3:
    core:
-     - mandi-1.3-1.mga3
+     - mandi-1.3-1.1.mga3
      - drakx-net-1.25-1.mga3
 description: |
   This is a bug fix update to the firewall in Mageia 3 that prevented the
