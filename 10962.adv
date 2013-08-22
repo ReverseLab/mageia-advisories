@@ -8,3 +8,4 @@ description: |
   This update fixes a user login problem in vsftpd.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10962
+ID: MGAA-2013-0089
