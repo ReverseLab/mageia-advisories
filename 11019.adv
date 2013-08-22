@@ -1,0 +1,27 @@
+type: security
+subject: Updated puppet and puppet3 package fix security vulnerabilities
+CVE:
+ - CVE-2013-4761
+ - CVE-2013-4956
+src:
+  2:
+   core:
+     - puppet-2.7.23-1.mga2
+  3:
+   core:
+     - puppet-2.7.23-1.mga3
+     - puppet3-3.2.4-1.mga3
+description: |
+  It was discovered that Puppet incorrectly handled the resource_type
+  service. A local attacker on the master could use this issue to execute
+  arbitrary Ruby files (CVE-2013-4761).
+  
+  It was discovered that Puppet incorrectly handled permissions on the
+  modules it installed. Modules could be installed with the permissions
+  that existed when   they were built, possibly exposing them to a local
+  attacker (CVE-2013-4956).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11019
+ - http://puppetlabs.com/security/cve/cve-2013-4761/
+ - http://puppetlabs.com/security/cve/cve-2013-4956/
+ - http://www.ubuntu.com/usn/usn-1928-1/
