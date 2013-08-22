@@ -1,0 +1,19 @@
+type: security
+subject: Updated xpdf packages fixes security vulnerability
+CVE:
+ - CVE-2012-2142
+src:
+  2:
+   core:
+     - xpdf-3.03-2.1.mga2
+  3:
+   core:
+     - xpdf-3.03-4.1.mga3
+description: |
+  PDF files could be used to inject shell code when xpdf was run from some
+  terminal emulators, due to the use of escape sequences in error messages
+  (CVE-2012-2142).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11061
+ - https://bugzilla.redhat.com/show_bug.cgi?id=789936
+ - http://www.slackware.com/security/viewer.php?l=slackware-security&y=2013&m=slackware-security.496284
