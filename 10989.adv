@@ -1,7 +1,7 @@
 type: security
 subject: Updated python packages fix CVE-2013-4328 and pip
 CVE:
- - CVE-2013-4328
+ - CVE-2013-4238
 src:
   2:
    core:
@@ -16,7 +16,7 @@ description: |
   module doesn't handle NULL bytes inside subjectAltNames general names. This
   could lead to a breach when an application uses ssl.match_hostname() to match
   the hostname againt the certificate's subjectAltName's dNSName general names.
-  (CVE-2013-4328).
+  (CVE-2013-4238).
 
   Additionally, an issue with installing Python packages with C extensions via
   pip and virtualenv has been fixed in Mageia 3 (mga#10102).
