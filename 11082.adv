@@ -1,0 +1,19 @@
+type: security
+subject: Updated ngircd package fixes CVE-2013-5580
+CVE:
+ - CVE-2013-5580
+src:
+  3:
+   core:
+     - ngircd-20.3-1.mga3
+description: |
+  Updated ngircd package fixes security vulnerability:
+
+  Denial of service bug (server crash) in ngIRCd before 20.3 which could happen
+  when the configuration option "NoticeAuth" is enabled (which is NOT the
+  default) and ngIRCd failed to send the "notice auth" messages to new clients
+  connecting to the server (CVE-2013-5580).
+references:
+ - http://arthur.barton.de/pipermail/ngircd-ml/2013-August/000645.html
+ - http://ngircd.barton.de/news.php.en
+ - https://bugs.mageia.org/show_bug.cgi?id=11082
