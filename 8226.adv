@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated libquicktime package fixes a missing i586 build in tainted
+src:
+  2:
+   core:
+     - libquicktime-1.2.3-3.1.mga2
+   tainted:
+     - libquicktime-1.2.3-3.1.mga2.tainted
+description: |
+  The i586 version of libquicktime was missing in Mageia 2's tainted
+  repository. This update adds it back.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=8226
