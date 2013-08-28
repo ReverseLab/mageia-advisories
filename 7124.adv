@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated pam_mount packages fix spurious log messages at each login
+src:
+  2:
+   core:
+     - pam_mount-2.13-1.2.mga2
+description: |
+  pam_mount prints "ehd_logctl: feature 1 is already zero" at each login.
+
+  This updated corrects the issue.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=7124
