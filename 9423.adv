@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated poppler packages fix missing images in pdf files
+src:
+  2:
+   core:
+     - poppler-0.18.4-2.2.mga2
+description: |
+  Evince, epdfview and other packages using libpoppler-glib8-0  don't display
+  some images, while other images even in the same document are displayed.
+
+  This update fixes this issue.
+references:
+ - https://bugzilla.redhat.com/show_bug.cgi?id=817378
+ - https://bugs.mageia.org/show_bug.cgi?id=9423
