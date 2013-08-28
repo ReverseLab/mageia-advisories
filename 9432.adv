@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated gnome-panel packages fix invisible notification area icons
+src:
+  3:
+   core:
+     - gnome-panel-3.6.2-2.1.mga3
+description: |
+  When using GNOME fallback mode, notifications icons would be displayed in
+  black on a black background, making them invisible. This update fixes it.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9432
