@@ -1,0 +1,20 @@
+type: security
+subject: Updated libtiff packages fix CVE-2013-4244
+CVE:
+ - CVE-2013-4244
+src:
+  2:
+   core:
+     - libtiff-4.0.1-2.8.mga2
+  3:
+   core:
+     - libtiff-4.0.3-4.2.mga3
+description: |
+  Updated libtiff packages fix security vulnerability:
+
+  Pedro Ribeiro and Huzaifa S. Sidhpurwala discovered multiple vulnerabilities
+  in various tools shipped by the tiff library. Processing a malformed file may
+  lead to denial of service or the execution of arbitrary code (CVE-2013-4244).
+references:
+ - http://www.debian.org/security/2013/dsa-2744
+ - https://bugs.mageia.org/show_bug.cgi?id=11099
