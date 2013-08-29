@@ -1,5 +1,7 @@
 type: security
-subject: Updated libdigidoc packages fix a vulnerbility in DDOC parsing routines
+subject: Updated libdigidoc packages fix CVE-2013-5648
+CVE:
+  - CVE-2013-5648
 src:
   2:
    core:
@@ -8,10 +10,12 @@ src:
    core:
      - libdigidoc-3.6.0.0-3.1.mga3
 description: |
-  Fixed one critical bug in the DDOC parsing routines. By persuading
-  a victim to open a specially-crafted DDOC file, a remote attacker
-  could exploit this vulnerability to overwrite arbitrary files on the
-  system with the privileges of the victim.
+  Updated libdigidoc packages fix security vulnerability:
+
+  Fixed one critical bug in the DDOC parsing routines. By persuading a victim to
+  open a specially-crafted DDOC file, a remote attacker could exploit this
+  vulnerability to overwrite arbitrary files on the system with the privileges
+  of the victim (CVE-2013-5648).
 references:
  - http://www.id.ee/?lang=en&id=34283#3_7_2
  - https://bugs.mageia.org/show_bug.cgi?id=11100
