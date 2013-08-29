@@ -1,0 +1,31 @@
+type: security
+subject: Updated php packages fix CVE-2013-4248 and prevent the two gd packages being installed at once
+CVE:
+ - CVE-2013-4248
+src:
+  2:
+   core:
+     - php-5.3.27-1.2.mga2
+  3:
+   core:
+     - php-5.4.19-1.1.mga3
+     - php-apc-3.1.14-7.3.mga3
+     - php-gd-bundled-5.4.19-1.mga3
+description: |
+  Updated php packages fix security vulnerability:
+
+  The openssl_x509_parse function in openssl.c in the OpenSSL module in PHP
+  before 5.4.18 and 5.5.x before 5.5.2 does not properly handle a '\0' character
+  in a domain name in the Subject Alternative Name field of an X.509 certificate,
+  which allows man-in-the-middle attackers to spoof arbitrary SSL servers via a
+  crafted certificate issued by a legitimate Certification Authority
+  (CVE-2013-4248).
+
+  Additionally it prevents php-gd and php-gd-bundled packages being installed
+  at the same time, which causes errors.
+references:
+ - http://www.php.net/ChangeLog-5.php
+ - http://git.php.net/?p=php-src.git;a=commit;h=dcea4ec698dcae39b7bba6f6aa08933cbfee6755
+ - http://git.php.net/?p=php-src.git;a=commit;h=c1c49d6e3983c9ce0b43ffe7bf6e03b809ed048b
+ - http://www.mandriva.com/en/support/security/advisories/advisory/MDVSA-2013:221/
+ - https://bugs.mageia.org/show_bug.cgi?id=10997
