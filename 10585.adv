@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated windowmaker packages fix missing dependencies and configuration issues 
+src:
+  3:
+   core:
+     - windowmaker-0.95.4-5.2.mga3
+description: |
+  Updated windowmaker packages fix missing functionalities in the mageia
+  desktop. This update also fixes other missing dependencies and configuration
+  issues.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10585
