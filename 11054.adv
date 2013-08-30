@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated rabbitmq-server package adds missing dependencies
+src:
+  3:
+   core:
+     - rabbitmq-server-3.0.4-2.1.mga3
+description: |
+  Updated rabbitmq-server package fixes a dependency problem (Bug 11054):
+
+  - missing requires causes crash on start
+  - missing requires causes the management plugin to fail
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11054
