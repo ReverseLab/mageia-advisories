@@ -11,3 +11,4 @@ description: |
   - missing requires causes the management plugin to fail
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=11054
+ID: MGAA-2013-0096
