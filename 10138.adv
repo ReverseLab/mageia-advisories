@@ -6,7 +6,7 @@ CVE:
 src:
   3:
    core:
-     - 389-ds-base-1.3.0.5-2.3.mga3
+     - 389-ds-base-1.3.0.8-1.mga3
 description: |
   Updated 389-ds-base packages fix security vulnerabilities:
 
@@ -29,3 +29,4 @@ references:
  - https://bugs.mageia.org/show_bug.cgi?id=10889
  - https://rhn.redhat.com/errata/RHSA-2013-1119.html
  - https://rhn.redhat.com/errata/RHSA-2013-1182.html
+ID: MGASA-2013-0263
