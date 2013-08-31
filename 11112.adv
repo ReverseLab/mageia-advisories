@@ -1,0 +1,16 @@
+type: bugfix
+subject: Updated cyrus-sasl packages fix NULL pointer dereferences causing segfaults
+src:
+  3:
+   core:
+     - cyrus-sasl-2.1.25-12.1.mga3
+description: |
+  Updated cyrus-sasl packages fix possible crashes:
+
+  Several possible NULL pointer dereferences which could cause crashes (segfaults)
+  in cyrus-sasl 2.1.25, including one in sasl_gss_encode() in gssapi.c and others
+  due to the use of crypt() with glibc 2.17, have been fixed.
+references:
+ - http://www.spinics.net/lists/cyrus-sasl/msg02004.html
+ - http://seclists.org/oss-sec/2013/q3/99
+ - https://bugs.mageia.org/show_bug.cgi?id=11112
