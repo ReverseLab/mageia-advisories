@@ -1,0 +1,19 @@
+type: security
+subject: Updated roundcubemail package fixes security vulnerability
+CVE:
+ - CVE-2013-5645
+src:
+  2:
+   core:
+     - roundcubemail-0.7.4-1.2.mga2
+  3:
+   core:
+     - roundcubemail-0.9.3-1.mga3
+description: |
+  XSS vulnerabilities when saving HTML signatures and when editing a
+  message "as new" or draft in roundcubemail before 0.9.3
+  (CVE-2013-5645).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11069
+ - http://trac.roundcube.net/ticket/1489251
+ - http://trac.roundcube.net/wiki/Changelog#RELEASE0.9.3
