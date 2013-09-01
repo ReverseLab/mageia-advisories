@@ -1,0 +1,170 @@
+type: security
+subject: Updated kde packages fix security issues
+CVE:
+ - CVE-2013-2126
+ - CVE-2013-2127
+ - CVE-2013-4132
+ - CVE-2013-4133
+src:
+  3:
+   core:
+     - analitza-4.10.5-1.1.mga3
+     - ark-4.10.5-1.1.mga3
+     - blinken-4.10.5-1.1.mga3
+     - bomber-4.10.5-1.1.mga3
+     - bovo-4.10.5-1.1.mga3
+     - cantor-4.10.5-1.1.mga3
+     - dragon-4.10.5-1.1.mga3
+     - ffmpegthumbs-4.10.5-1.1.mga3
+     - filelight-4.10.5-1.1.mga3
+     - granatier-4.10.5-1.1.mga3
+     - gwenview-4.10.5-1.1.mga3
+     - jovie-4.10.5-1.1.mga3
+     - juk-4.10.5-1.1.mga3
+     - kaccessible-4.10.5-1.1.mga3
+     - kajongg-4.10.5-1.1.mga3
+     - kalgebra-4.10.5-1.1.mga3
+     - kalzium-4.10.5-1.1.mga3
+     - kamera-4.10.5-1.1.mga3
+     - kanagram-4.10.5-1.1.mga3
+     - kapman-4.10.5-1.1.mga3
+     - kate-4.10.5-1.1.mga3
+     - katomic-4.10.5-1.1.mga3
+     - kblackbox-4.10.5-1.1.mga3
+     - kblocks-4.10.5-1.1.mga3
+     - kbounce-4.10.5-1.1.mga3
+     - kbreakout-4.10.5-1.1.mga3
+     - kbruch-4.10.5-1.1.mga3
+     - kcalc-4.10.5-1.1.mga3
+     - kcharselect-4.10.5-1.1.mga3
+     - kcolorchooser-4.10.5-1.1.mga3
+     - kde4-audiocd-4.10.5-1.1.mga3
+     - kdeadmin4-4.10.5-1.1.mga3
+     - kdeartwork4-4.10.5-1.1.mga3
+     - kdebase4-4.10.5-1.1.mga3
+     - kdebase4-runtime-4.10.5-1.1.mga3
+     - kdebase4-workspace-4.10.5-1.1.mga3
+     - kde-base-artwork-4.10.5-1.1.mga3
+     - kdegraphics-mobipocket-4.10.5-1.1.mga3
+     - kdegraphics-strigi-analyzer-4.10.5-1.1.mga3
+     - kdegraphics-thumbnailers-4.10.5-1.1.mga3
+     - kde-l10n-4.10.5-1.1.mga3
+     - kdelibs4-4.10.5-1.1.mga3
+     - kdenetwork4-4.10.5-1.1.mga3
+     - kdepim4-4.10.5-1.1.mga3
+     - kdepim4-runtime-4.10.5-1.1.mga3
+     - kdepimlibs4-4.10.5-1.1.mga3
+     - kdeplasma-addons-4.10.5-1.1.mga3
+     - kdesdk4-4.10.5-1.1.mga3
+     - kdetoys4-4.10.5-1.1.mga3
+     - kde-wallpapers-4.10.5-1.1.mga3
+     - kdewebdev4-4.10.5-1.1.mga3
+     - kdf-4.10.5-1.1.mga3
+     - kdiamond-4.10.5-1.1.mga3
+     - kfloppy-4.10.5-1.1.mga3
+     - kfourinline-4.10.5-1.1.mga3
+     - kgamma-4.10.5-1.1.mga3
+     - kgeography-4.10.5-1.1.mga3
+     - kgoldrunner-4.10.5-1.1.mga3
+     - kgpg-4.10.5-1.1.mga3
+     - khangman-4.10.5-1.1.mga3
+     - kig-4.10.5-1.1.mga3
+     - kigo-4.10.5-1.1.mga3
+     - killbots-4.10.5-1.1.mga3
+     - kimono-4.10.5-1.1.mga3
+     - kiriki-4.10.5-1.1.mga3
+     - kiten-4.10.5-1.1.mga3
+     - kjumpingcube-4.10.5-1.1.mga3
+     - klettres-4.10.5-1.1.mga3
+     - klickety-4.10.5-1.1.mga3
+     - klines-4.10.5-1.1.mga3
+     - kmag-4.10.5-1.1.mga3
+     - kmahjongg-4.10.5-1.1.mga3
+     - kmines-4.10.5-1.1.mga3
+     - kmix-4.10.5-1.1.mga3
+     - kmousetool-4.10.5-1.1.mga3
+     - kmouth-4.10.5-1.1.mga3
+     - kmplot-4.10.5-1.1.mga3
+     - knavalbattle-4.10.5-1.1.mga3
+     - knetwalk-4.10.5-1.1.mga3
+     - kolf-4.10.5-1.1.mga3
+     - kollision-4.10.5-1.1.mga3
+     - kolourpaint-4.10.5-1.1.mga3
+     - konquest-4.10.5-1.1.mga3
+     - konsole-4.10.5-1.1.mga3
+     - korundum-4.10.5-1.1.mga3
+     - kpat-4.10.5-1.1.mga3
+     - kremotecontrol-4.10.5-1.1.mga3
+     - kreversi-4.10.5-1.1.mga3
+     - kross-interpreters-4.10.5-1.1.mga3
+     - kruler-4.10.5-1.1.mga3
+     - ksaneplugin-4.10.5-1.1.mga3
+     - kscd-4.10.5-1.1.mga3
+     - kshisen-4.10.5-1.1.mga3
+     - ksirk-4.10.5-1.1.mga3
+     - ksnakeduel-4.10.5-1.1.mga3
+     - ksnapshot-4.10.5-1.1.mga3
+     - kspaceduel-4.10.5-1.1.mga3
+     - ksquares-4.10.5-1.1.mga3
+     - kstars-4.10.5-1.1.mga3
+     - ksudoku-4.10.5-1.1.mga3
+     - ktimer-4.10.5-1.1.mga3
+     - ktouch-4.10.5-1.1.mga3
+     - ktuberling-4.10.5-1.1.mga3
+     - kturtle-4.10.5-1.1.mga3
+     - kubrick-4.10.5-1.1.mga3
+     - kwallet-4.10.5-1.1.mga3
+     - kwordquiz-4.10.5-1.1.mga3
+     - libkactivities-4.10.5-1.1.mga3
+     - libkcddb-4.10.5-1.1.mga3
+     - libkcompactdisc-4.10.5-1.1.mga3
+     - libkdcraw-4.10.5-1.1.mga3
+     - libkdeedu-4.10.5-1.1.mga3
+     - libkdegames-4.10.5-1.1.mga3
+     - libkexiv2-4.10.5-1.1.mga3
+     - libkipi-4.10.5-1.1.mga3
+     - libkmahjongg-4.10.5-1.1.mga3
+     - libksane-4.10.5-1.1.mga3
+     - lskat-4.10.5-1.1.mga3
+     - marble-4.10.5-1.1.mga3
+     - mplayerthumbs-4.10.5-1.1.mga3
+     - nepomuk-core-4.10.5-1.1.mga3
+     - nepomuk-widgets-4.10.5-1.1.mga3
+     - okular-4.10.5-1.1.mga3
+     - oxygen-icon-theme-4.10.5-1.1.mga3
+     - pairs-4.10.5-1.1.mga3
+     - palapeli-4.10.5-1.1.mga3
+     - parley-4.10.5-1.1.mga3
+     - perl-kde4-4.10.5-1.1.mga3
+     - perl-qt4-4.10.5-1.1.mga3
+     - picmi-4.10.5-1.1.mga3
+     - print-manager-4.10.5-1.1.mga3
+     - python-kde4-4.10.5-1.1.mga3
+     - qyoto-4.10.5-1.1.mga3
+     - rocs-4.10.5-1.1.mga3
+     - ruby-qt4-4.10.5-1.1.mga3
+     - smokegen-4.10.5-1.1.mga3
+     - smokekde-4.10.5-1.1.mga3
+     - smokeqt-4.10.5-1.1.mga3
+     - step-4.10.5-1.1.mga3
+     - superkaramba-4.10.5-1.1.mga3
+     - svgpart-4.10.5-1.1.mga3
+     - sweeper-4.10.5-1.1.mga3
+     - task-kde4-4.10.5-1.mga3
+description: |
+  This update provides the last stable version of KDE for the 4.10.x
+  branch. Some of the new packages fixes additional issues open on our
+  tracker :
+  - A memory leak in kde-workspace (kde #314919 & mga #7953)
+  - A memory leak in kmix ( mga #10702 & kde #309464 )
+  - A packaging issue affecting kdebase4-runtime (mga #10387) & another
+    affecting  kdegraphics-thumbnailers (mga #10388) 
+  - A crash of akonadi davgroupware ressource ( mga #10396)
+  - Several security issues affecting libraw & so libkdcraw
+    ( CVE-2013-2126, CVE-2013-2127,
+  - Several security fixes affecting kdebase4-workspace
+    ( CVE-2013-4132 & CVE-2013-4133 )
+  See the referenced buglist for the complete list of fixes.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10600
+ - https://bugs.kde.org/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2013-06-01&chfieldto=Now&chfield=cf_versionfixedin&chfieldvalue=4.10.5&cmdtype=doit&order=Bug+Number&field0-0-0=noop&type0-0-0=noop&value0-0-0=
