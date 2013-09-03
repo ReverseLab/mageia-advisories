@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated amarok package fixes crashes.
+src:
+  3:
+   core:
+     - amarok-2.7.1-1.mga3
+description: |
+  This updates Amarok to verson 2.7.1, fixing several issues
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10480
+ - http://amarok.kde.org/en/releases/2.7.1
