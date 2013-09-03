@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated drakwizard package fixes proftpd configuration
+src:
+  2:
+   core:
+     - drakwizard-3.9-1.mga2
+  3:
+   core:
+     - drakwizard-3.9.2-1
+description: |
+  This is a bugfix update for drakwizard to fix several bugs with the server
+  wizards that cause failure messages at the completion of the wizards.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10830
