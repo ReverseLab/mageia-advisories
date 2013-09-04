@@ -1,0 +1,19 @@
+type: bugfix
+subject: Updated kdegraphics-thumbnailers package fixes suggests on texlive
+src:
+  3:
+   core:
+     - kdegraphics-thumbnailers-4.10.5-1.2.mga3
+description: |
+  The recently released KDE update for Mageia 3 included a change to the
+  kdegraphics-thumbnailers package where it suggested the texlive package,
+  which added the ability to generate thumbnail previews of DVI files using
+  the dvips command.  Unfortunately, the texlive package requires the very
+  large texlive-texmf package, and since the Mageia update applet installs
+  all suggested packages, this made installing the kdegraphics-thumbnailers
+  update problematic for some users.  This update no longer lists texlive
+  as a suggested package as a temporary workaround, so that the texlive
+  package can be reorganized to allow the dvips command to be provided
+  without requiring the full texlive-texmf package, at a later time.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10388
