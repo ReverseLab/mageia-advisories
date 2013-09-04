@@ -17,3 +17,4 @@ description: |
   without requiring the full texlive-texmf package, at a later time.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10388
+ID: MGAA-2013-0100
