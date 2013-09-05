@@ -1,0 +1,24 @@
+type: security
+subject: Updated libmodplug packages fixes security vulnerabilities
+CVE:
+ - CVE-2013-4233
+ - CVE-2013-4234
+src:
+  2:
+   core:
+     - libmodplug-0.8.8.4-1.1.mga2
+  3:
+   core:
+     - libmodplug-0.8.8.4-3.1.mga3
+description: |
+  An integer overflow within the "abc_set_parts()" function
+  (src/load_abc.cpp) can be exploited to corrupt heap memory via a specially
+  crafted ABC file   (CVE-2013-4233).
+
+  An error within the "abc_MIDI_drum()" and "abc_MIDI_gchord()" functions
+  (src/load_abc.cpp) can be exploited to cause a buffer overflow via a
+  specially crafted ABC file (CVE-2013-4234).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11170
+ - https://secunia.com/advisories/54388/
+ - http://www.debian.org/security/2013/dsa-2751
