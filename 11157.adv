@@ -1,0 +1,27 @@
+type: security
+subject: Updated mediawiki package fixes security vulnerabilities
+CVE:
+ - CVE-2013-4301
+ - CVE-2013-4302
+ - CVE-2013-4303
+src:
+  2:
+   core:
+     - mediawiki-1.20.7-1.mga2
+  3:
+   core:
+     - mediawiki-1.20.7-1.mga3
+description: |
+  Full path disclosure in MediaWiki before 1.20.7, when an invalid language
+  is specified in ResourceLoader (CVE-2013-4301).
+  
+  Several API modules in MediaWiki before 1.20.7 allowed anti-CSRF tokens
+  to be accessed via JSONP (CVE-2013-4302).
+  
+  An issue with the MediaWiki API in MediaWiki before 1.20.7 where an
+  invalid property name could be used for XSS with older versions of
+  Internet Explorer (CVE-2013-4303).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11157
+ - http://lists.wikimedia.org/pipermail/mediawiki-announce/2013-September/000133.html
+ - https://www.mediawiki.org/wiki/Release_notes/1.20
