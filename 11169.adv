@@ -1,0 +1,22 @@
+type: security
+subject: Updated python-setuptools and python-virtualenv packages fix security vulnerability
+CVE:
+ - CVE-2013-1633
+src:
+  2:
+   core:
+     - python-setuptools-0.9.8-1.1.mga2
+     - python-virtualenv-1.10.1-0.1.mga2
+  3:
+   core:
+     - python-setuptools-0.9.8-2.1.mga3
+     - python-virtualenv-1.10.1-1.1.mga3
+description: |
+  easy_install in setuptools before 0.7 uses HTTP to retrieve packages from
+  the PyPI repository, and does not perform integrity checks on package
+  contents, which allows man-in-the-middle attackers to execute arbitrary
+  code via a crafted response to the default use of the product
+  (CVE-2013-1633).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11169
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-September/115118.html
