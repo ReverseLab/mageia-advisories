@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated python and tkinter packages fixes documentation file permissions.
+src:
+  2:
+   core:
+     - python-2.7.3-2.5.mga2
+description: |
+  The files in /usr/share/doc/python-docs/ were only readable by the root
+  user. This update makes them readable by all users.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=5693
