@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated nagstamon package fixes missing dependency.
+src:
+  3:
+   core:
+     - nagstamon-0.9.9-1.3.mga3
+description: |
+  The nagstamon program requires python-pkg-resources to be able to run, but
+  the requires, to ensure it was installed was missing. This update corrects
+  the problem.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11086
