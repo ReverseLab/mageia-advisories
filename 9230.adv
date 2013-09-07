@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated ocrfeeder package fixes missing dependency and bugs.
+src:
+  2:
+   core:
+     - ocrfeeder-0.7.11-1.mga2
+description: |
+  This ocrfeeder update adds a missing dependency of python-enchant, and
+  updates it to the latest release 0.7.11, which fixes several bugs
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9230
