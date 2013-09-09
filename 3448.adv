@@ -1,7 +1,5 @@
 type: security
 subject: Updated mediawiki packages fix security vulnerabilities
-CVE:
- - unspecified
 src:
   2:
    core:
