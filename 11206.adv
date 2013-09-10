@@ -1,0 +1,20 @@
+type: security
+subject: Updated python-OpenSSL package fixes security vulnerability
+CVE:
+ - CVE-2013-4314
+src:
+  2:
+   core:
+     - python-OpenSSL-0.12-1.1.mga2
+  3:
+   core:
+     - python-OpenSSL-0.13-2.1.mga3
+description: |
+  The string formatting of subjectAltName X509Extension instances in
+  pyOpenSSL before 0.13.1 incorrectly truncated fields of the name when
+  encountering a null byte, possibly allowing man-in-the-middle attacks
+  through certificate spoofing (CVE-2013-4314).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11206
+ - https://mail.python.org/pipermail/pyopenssl-users/2013-September/000478.html
+ - https://bugzilla.redhat.com/show_bug.cgi?id=1005325
