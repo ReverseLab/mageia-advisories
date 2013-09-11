@@ -1,0 +1,22 @@
+type: security
+subject: Updated subversion package fixes security vulnerability.
+CVE:
+ - CVE-2013-4277
+src:
+  2:
+   core:
+     - subversion-1.7.13-1.mga2
+  3:
+   core:
+     - subversion-1.7.13-1.mga3
+description: |
+  svnserve takes a --pid-file option which creates a file containing the
+  process id it is running as. It does not take steps to ensure that the
+  file it has been directed at is not a symlink. If the pid file is in a
+  directory writeable by unprivileged users, the destination could be
+  replaced by a symlink allowing for   privilege escalation. svnserve
+  does not create a pid file by default (CVE-2013-4277).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11207
+ - http://subversion.apache.org/security/CVE-2013-4277-advisory.txt
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-September/115318.html
