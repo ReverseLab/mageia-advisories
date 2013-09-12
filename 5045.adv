@@ -1,0 +1,16 @@
+type: bugfix
+subject: Updated tigervnc package fixes bugs
+src:
+  2:
+   core:
+     - tigervnc-1.1.0-3.1.mga2
+description: |
+  Updated tigervnc packages to fix:
+
+  #mga5045: Rebuilt xorg111 patch from Fedora
+  #mga10181: Changes the java classes path /usr/share/tigervnc/classes to
+  /usr/share/vnc/classes
+
+  This update also add BuildRequires: jpackage-utils
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=5045
