@@ -1,9 +1,10 @@
 type: bugfix
-subject: Updated xbmc package fixes various issues
+subject: Updated xbmc/vdr-plugin-vnsiserver packages fix various issues
 src:
   3:
    core:
      - xbmc-12.2-1.1.mga3
+     - vdr-plugin-vnsiserver-0.9.1-0.git20130204.1.mga3
 description: |
   XBMC 12.2 contains fixes to various issues. See the referenced
   announcement for a list of the most important ones. Additionally, this
@@ -18,6 +19,9 @@ description: |
   command line (Mageia bug #2331) .
 
   The PVR addons have also been updated.
+
+  VDR plugin "vnsiserver" is also updated to a version compatible with the
+  current version of XBMC.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=10485
  - https://bugs.mageia.org/show_bug.cgi?id=2331
