@@ -3,9 +3,6 @@ subject: Updated freeswitch packages fix security vulnerability
 CVE:
  - CVE-2013-2238
 src:
-  2:
-   core:
-     - something-1.0-1.mga2
   3:
    core:
      - freeswitch-1.2.12-6.mga3
