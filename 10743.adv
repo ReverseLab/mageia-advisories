@@ -1,0 +1,21 @@
+type: security
+subject: Updated freeswitch packages fix security vulnerability
+CVE:
+ - CVE-2013-2238
+src:
+  2:
+   core:
+     - something-1.0-1.mga2
+  3:
+   core:
+     - freeswitch-1.2.12-6.mga3
+description: |
+  In FreeSWITCH before 1.2.12, if the routing configuration includes
+  regular expressions that don't constrain the length of the input, buffer
+  overflows are possible. Since these regular expressions are matched
+  against untrusted input, remote code execution may be possible
+  (CVE-2013-2238).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10743
+ - http://openwall.com/lists/oss-security/2013/07/01/11
+ - http://jira.freeswitch.org/browse/FS-5566
