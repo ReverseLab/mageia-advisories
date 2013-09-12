@@ -1,0 +1,19 @@
+type: security
+subject: Updated lightdm package fixes security vulnerability
+CVE:
+ - CVE-2013-4331
+src:
+  3:
+   core:
+     - lightdm-1.4.3-1.mga3
+description: |
+  lightdm before 1.4.3, 1.6.2 and 1.7.14 created .Xauthority files with
+  world-readable permissions (CVE-2013-4331).
+
+  Additionally, an issue where a user logged into a graphical desktop
+  environment through lightdm would lose privleges to local devices (such as
+  the sound card) when using the 'su' command has been fixed.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11219
+ - https://bugs.mageia.org/show_bug.cgi?id=11071
+ - http://openwall.com/lists/oss-security/2013/09/11/4
