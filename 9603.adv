@@ -1,0 +1,19 @@
+type: bugfix
+subject: Updated webkit-sharp package fixes sparkleshare startup.
+src:
+  2:
+   core:
+     - webkit-sharp-0.3-3.1.mga2
+  3:
+   core:
+     - webkit-sharp-0.3-5.1.mga3
+description: |
+  A bug in webkit-sharp made it look for libwebkitgtk in
+  /usr/lib{,64}/libwebkit-1.0.so.2, instead of
+  /usr/lib{,64}/libwebkitgtk-1.0.so.0. It was detected because it made
+  sparkleshare crash in Mageia 3, but also affects Mageia 2 (although the
+  older version of sparkleshare there doesn't seem to crash).
+
+  The update fixes this library path issue.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9603
