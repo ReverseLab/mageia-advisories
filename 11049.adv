@@ -1,0 +1,43 @@
+type: security
+subject: Updated chromium-browser-stable package fix security vulnerabilities
+CVE:
+ - CVE-2013-2887
+ - CVE-2013-2900
+ - CVE-2013-2901
+ - CVE-2013-2902
+ - CVE-2013-2903
+ - CVE-2013-2904
+ - CVE-2013-2905
+src:
+  2:
+   core:
+     - chromium-browser-stable-29.0.1547.65-1.mga2
+  3:
+   core:
+     - chromium-browser-stable-29.0.1547.65-1.mga3
+description: |
+  The chrome 29 development team found various issues from internal fuzzing
+  audits, and other studies (CVE-2013-2887).
+
+  Krystian Bigaj discovered a file handling path sanitization issue
+  (CVE-2013-2900).
+
+  Alex Chapman discovered an integer overflow issue in ANGLE, the Almost
+  Native Graphics Layer (CVE-2013-2901).
+
+  cloudfuzzer discovered a use-after-free issue in XSLT (CVE-2013-2902).
+
+  cloudfuzzer discovered a use-after-free issue in HTMLMediaElement
+  (CVE-2013-2903).
+
+  cloudfuzzer discovered a use-after-free issue in XML document parsing
+  (CVE-2013-2904).
+
+  Christian Jaeger discovered an information leak due to insufficient file
+  permissions (CVE-2013-2905).
+
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11049
+ - http://googlechromereleases.blogspot.com/2013/08/stable-channel-update.html
+ - http://googlechromereleases.blogspot.com/2013/09/stable-channel-update.html
+ - http://www.debian.org/security/2013/dsa-2741
