@@ -1,0 +1,16 @@
+type: bugfix
+subject: Updated tigervnc package fixes web server startup
+src:
+  3:
+   core:
+     - tigervnc-1.1.0-3.1.mga3
+description: |
+  This update changes the java classes path /usr/share/tigervnc/classes
+  to /usr/share/vnc/classes
+
+  This update also add Fedora patchs:
+  Rebuilt xorg110 & xorg111 patch
+  Added patch to xorg112 & xorg113
+  Added patch to latest Java 7
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10181
