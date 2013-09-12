@@ -1,0 +1,15 @@
+type: bugfix
+subject: Updated qupzilla package fixes localization.
+src:
+  3:
+   core:
+     - qupzilla-1.4.1-1.2.mga3
+description: |
+  The updated qupzilla package resolves an issue caused by some bad locale
+  definitions into the rpm spec file. Due to the bad lang definitions in
+  the spec file, the package will place the qm files into the wrong place
+  making qupzilla unable to properly load the localizations.
+
+  This update adds no new features.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11121
