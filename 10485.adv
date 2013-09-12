@@ -1,0 +1,24 @@
+type: bugfix
+subject: Updated xbmc package fixes various issues
+src:
+  3:
+   core:
+     - xbmc-12.2-1.1.mga3
+description: |
+  XBMC 12.2 contains fixes to various issues. See the referenced
+  announcement for a list of the most important ones. Additionally, this
+  update fixes video playback issues experienced with the NVIDIA proprietary
+  driver version 319.17 (Mageia bug #10485).
+
+  This update also fixes A/V lipsync issues experienced by some people,
+  especially when a 24Hz refresh rate was configured.
+
+  Also, file names with spaces will now work properly when opened externally
+  in XBMC using "Open with..." or when entering the name directly from
+  command line (Mageia bug #2331) .
+
+  The PVR addons have also been updated.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=10485
+ - https://bugs.mageia.org/show_bug.cgi?id=2331
+ - http://xbmc.org/xbmc-12-2-even-more-frodo
