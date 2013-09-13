@@ -1,0 +1,28 @@
+type: security
+subject: Updated wireshark package fixes security vulnerabilities
+CVE:
+ - CVE-2013-5719
+ - CVE-2013-5720
+ - CVE-2013-5721
+ - CVE-2013-5722
+src:
+  2:
+   core:
+     - wireshark-1.8.10-1.mga2
+description: |
+  The ASSA R3 dissector could go into an infinite loop (CVE-2013-5719).
+  The RTPS dissector could overflow a buffer (CVE-2013-5720).
+  The MQ dissector could crash (CVE-2013-5721).
+  The LDAP dissector could crash (CVE-2013-5722).
+  The Netmon file parser could crash (wpna-sec-2013-60).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11214
+ - http://www.wireshark.org/security/wnpa-sec-2013-55.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-56.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-57.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-58.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-59.html
+ - http://www.wireshark.org/security/wnpa-sec-2013-60.html
+ - http://www.wireshark.org/docs/relnotes/wireshark-1.8.10.html
+ - http://www.wireshark.org/news/20130910.html
+ - http://www.openwall.com/lists/oss-security/2013/09/11/1
