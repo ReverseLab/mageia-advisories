@@ -15,6 +15,8 @@ src:
   3:
    core:
      - chromium-browser-stable-29.0.1547.65-1.mga3
+   tainted:
+     - chromium-browser-stable-29.0.1547.65-1.mga3.tainted
 description: |
   The chrome 29 development team found various issues from internal fuzzing
   audits, and other studies (CVE-2013-2887).
