@@ -1,0 +1,24 @@
+type: security
+subject: Updated moodle package fixes multiple security vulnerabilities
+CVE:
+ - CVE-2013-4313
+ - CVE-2013-4341
+src:
+  3:
+   core:
+     - moodle-2.4.6-1.mga3
+description: |
+  Updated moodle package fixes security vulnerabilities:
+
+  Null characters were allowed in query strings in Moodle before 2.4.6, which
+  caused sql statements to terminate and fail, potentially allowing sql
+  injection in Moodle's SQL Server driver (CVE-2013-4313).
+
+  Links to external blogs were not being adequately cleaned in Moodle before
+  2.4.6, potentially allowing for XSS attacks (CVE-2013-4341).
+references:
+ - https://moodle.org/mod/forum/discuss.php?d=238396
+ - https://moodle.org/mod/forum/discuss.php?d=238399
+ - http://docs.moodle.org/dev/Moodle_2.4.6_release_notes
+ - https://moodle.org/mod/forum/discuss.php?d=237413
+ - https://bugs.mageia.org/show_bug.cgi?id=11212
