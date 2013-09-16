@@ -1,0 +1,13 @@
+type: bugfix
+subject: Updated fontforge package fixes a segfault selecting spline points
+src:
+  2:
+   core:
+     - fontforge-1.0-0.20120731.1.mga2
+description: |
+  Editing glyphs in character view of fontforge segfaults if 5 or more spline
+  points have been selected and any keyboard key is pressed.
+  
+  The update corrects this.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=6897
