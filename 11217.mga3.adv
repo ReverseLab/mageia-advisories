@@ -1,0 +1,32 @@
+type: security
+subject: Updated [package] package fixes [something]
+CVE:
+ - CVE-2013-4315
+ - CVE-2013-1443
+src:
+  3:
+   core:
+     - python-django-1.4.8-1.mga3
+description: |
+  Updated python-django package fixes security vulnerabilities:
+
+  Rainer Koirikivi discovered a directory traversal vulnerability with 'ssi'
+  template tags in python-django, a high-level Python web development framework.
+  It was shown that the handling of the 'ALLOWED_INCLUDE_ROOTS' setting, used to
+  represent allowed prefixes for the {% ssi %} template tag, is vulnerable to a
+  directory traversal attack, by specifying a file path which begins as the
+  absolute path of a directory in 'ALLOWED_INCLUDE_ROOTS', and then uses relative
+  paths to break free.  To exploit this vulnerability an attacker must be in a
+  position to alter templates on the site, or the site to be attacked must have
+  one or more templates making use of the 'ssi' tag, and must allow some form of
+  unsanitized user input to be used as an argument to the 'ssi' tag
+  (CVE-2013-4315).
+
+  Django before 1.4.8 allows for denial-of-service attacks through repeated
+  submission of large passwords, tying up server resources in the expensive
+  computation of the corresponding hashes (CVE-2013-1443).
+references:
+ - https://www.djangoproject.com/weblog/2013/sep/10/security-releases-issued/
+ - https://www.djangoproject.com/weblog/2013/sep/15/security/
+ - http://www.debian.org/security/2013/dsa-2755
+ - https://bugs.mageia.org/show_bug.cgi?id=11217.mga3
