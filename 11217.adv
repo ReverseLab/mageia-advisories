@@ -1,5 +1,5 @@
 type: security
-subject: Updated python-django package for fixes security vulnerability
+subject: Updated python-django package fixes security vulnerability
 CVE:
  - CVE-2013-4315
 src:
