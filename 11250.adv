@@ -1,0 +1,49 @@
+type: security
+subject: Updated firefox and thunderbird packages fix security vulnerabilities
+CVE:
+ - CVE-2013-1718
+ - CVE-2013-1722
+ - CVE-2013-1725
+ - CVE-2013-1730
+ - CVE-2013-1732
+ - CVE-2013-1735
+ - CVE-2013-1736
+ - CVE-2013-1737
+src:
+  2:
+   core:
+     - firefox-17.0.9-1.mga2
+     - firefox-l10n-17.0.9-1.mga2
+     - thunderbird-17.0.9-1.mga2
+     - thunderbird-l10n-17.0.9-1.mga2
+  3:
+   core:
+     - firefox-17.0.9-1.mga3
+     - firefox-17.0.9-1.mga3
+     - thunderbird-17.0.9-1.mga3
+     - thunderbird-l10n-17.0.9-1.mga3
+description: |
+  Several flaws were found in the processing of malformed web content. A
+  web page containing malicious content could cause Firefox or Thunderbird
+  to crash or, potentially, execute arbitrary code with the privileges of
+  the user running Firefox or Thunderbird (CVE-2013-1718, CVE-2013-1722,
+  CVE-2013-1725, CVE-2013-1730, CVE-2013-1732, CVE-2013-1735,
+  CVE-2013-1736).
+
+  A flaw was found in the way Firefox and Thunderbird handled certain DOM
+  JavaScript objects. An attacker could use this flaw to make JavaScript
+  client or add-on code make incorrect, security sensitive decisions
+  (CVE-2013-1737).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11250
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-76.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-79.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-82.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-83.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-88.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-89.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-90.html
+ - http://www.mozilla.org/security/announce/2013/mfsa2013-91.html
+ - http://www.mozilla.org/security/known-vulnerabilities/firefoxESR.html
+ - https://rhn.redhat.com/errata/RHSA-2013-1268.html
+ - https://rhn.redhat.com/errata/RHSA-2013-1269.html
