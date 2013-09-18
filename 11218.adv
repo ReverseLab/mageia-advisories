@@ -1,0 +1,45 @@
+type: security
+subject: Updated wordpress package fixes security vulnerabilities
+CVE:
+ - CVE-2013-4338
+ - CVE-2013-4339
+ - CVE-2013-4340
+ - CVE-2013-5738
+ - CVE-2013-5739
+src:
+  2:
+   core:
+     - wordpress-3.6.1-1.mga2
+  3:
+   core:
+     - wordpress-3.6.1-1.mga3
+description: |
+  wp-includes/functions.php in WordPress before 3.6.1 does not properly
+  determine whether data has been serialized, which allows remote
+  attackers to execute arbitrary code by triggering erroneous PHP
+  unserialize operations (CVE-2013-4338).
+
+  WordPress before 3.6.1 does not properly validate URLs before use in
+  an HTTP redirect, which allows remote attackers to bypass intended
+  redirection restrictions via a crafted string (CVE-2013-4339).
+
+  wp-admin/includes/post.php in WordPress before 3.6.1 allows remote
+  authenticated users to spoof the authorship of a post by leveraging
+  the Author role and providing a modified user_ID parameter
+  (CVE-2013-4340).
+
+  The get_allowed_mime_types function in wp-includes/functions.php in
+  WordPress before 3.6.1 does not require the unfiltered_html capability
+  for uploads of .htm and .html files, which might make it easier for
+  remote authenticated users to conduct cross-site scripting (XSS)
+  attacks via a crafted file (CVE-2013-5738).
+
+  The default configuration of WordPress before 3.6.1 does not prevent
+  uploads of .swf and .exe files, which might make it easier for remote
+  authenticated users to conduct cross-site scripting (XSS) attacks via
+  a crafted file, related to the get_allowed_mime_types function in
+  wp-includes/functions.php (CVE-2013-5739).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11218
+ - http://wordpress.org/news/2013/09/wordpress-3-6-1/
+ - http://www.debian.org/security/2013/dsa-2757
