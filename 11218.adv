@@ -1,5 +1,5 @@
 type: security
-subject: Updated wordpress package fixes security vulnerabilities
+subject: Updated wordpress and php-phpmailer packages fix security vulnerabilities
 CVE:
  - CVE-2013-4338
  - CVE-2013-4339
@@ -10,9 +10,11 @@ src:
   2:
    core:
      - wordpress-3.6.1-1.mga2
+     - php-phpmailer-5.2.7-0.20130917.1.mga2
   3:
    core:
      - wordpress-3.6.1-1.mga3
+     - php-phpmailer-5.2.7-0.20130917.1.mga3
 description: |
   wp-includes/functions.php in WordPress before 3.6.1 does not properly
   determine whether data has been serialized, which allows remote
@@ -39,6 +41,10 @@ description: |
   authenticated users to conduct cross-site scripting (XSS) attacks via
   a crafted file, related to the get_allowed_mime_types function in
   wp-includes/functions.php (CVE-2013-5739).
+
+  Additionally, php-phpmailer has been updated to a newer version required
+  by the updated wordpress.
+
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=11218
  - http://wordpress.org/news/2013/09/wordpress-3-6-1/
