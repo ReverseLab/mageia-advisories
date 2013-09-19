@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated sane package fixes support for additional scanners
+src:
+  2:
+   core:
+     - sane-1.0.22-7.1.mga2
+description: |
+  Updated sane package supports scanners requiring libsane-mustek_usb2 such
+  as the Mustek BearPaw 2448TA Pro scanner.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=6120
