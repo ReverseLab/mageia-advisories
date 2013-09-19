@@ -14,3 +14,4 @@ description: |
   This update also add BuildRequires: jpackage-utils
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=5045
+ID: MGAA-2013-0103
