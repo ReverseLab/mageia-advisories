@@ -1,0 +1,12 @@
+type: bugfix
+subject: Updated slim package fixes device ownership
+src:
+  3:
+   core:
+     - slim-1.3.4-3.1.mga3
+description: |
+  An issue where a user logged into a graphical desktop environment
+  through slim would lose privleges to local devices (such as the sound
+  card)   when using the 'su' command has been fixed.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11138
