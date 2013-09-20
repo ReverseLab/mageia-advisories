@@ -10,3 +10,4 @@ description: |
   card)   when using the 'su' command has been fixed.
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=11138
+ID: MGAA-2013-0112
