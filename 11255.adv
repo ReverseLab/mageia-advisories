@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated python packages fix multiple bugs.
+src:
+  2:
+   core:
+     - python-2.7.5-0.1.mga2
+description: |
+  Updated python packages, multiples upstream bug fixes, allow correct use
+  of python-virtualenv
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11255
