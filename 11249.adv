@@ -9,3 +9,4 @@ description: |
   The iscsitarget package did not require dkms-iscsitarget
 references:
  - https://bugs.mageia.org/show_bug.cgi?id=11249
+ID: MGAA-2013-0114
