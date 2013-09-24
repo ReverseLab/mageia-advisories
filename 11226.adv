@@ -1,0 +1,21 @@
+type: security
+subject: Updated perl-Crypt-DSA package fixes security vulnerability
+CVE:
+ - CVE-2011-3599
+src:
+  2:
+   core:
+     - perl-Crypt-DSA-1.170.0-1.1.mga2
+  3:
+   core:
+     - perl-Crypt-DSA-1.170.0-2.1.mga3
+description: |
+  The Crypt::DSA (aka Crypt-DSA) module 1.17 and earlier for Perl, when
+  /dev/random is absent, uses the Data::Random module, which makes it easier
+  for remote attackers to spoof a signature, or determine the signing key of
+  a signed message, via a brute-force attack (CVE-2011-3599).
+
+  This update removes the fallback to Data::Random.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11226
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-September/115603.html
