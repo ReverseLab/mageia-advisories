@@ -1,0 +1,27 @@
+type: security
+subject: Updated libvirt package fixes security vulnerabilities
+CVE:
+ - CVE-2013-4296
+ - CVE-2013-4311
+ - CVE-2013-5651
+src:
+  2:
+   core:
+     - libvirt-0.9.12-1.mga2
+  3:
+   core:
+     - libvirt-1.0.2-8.4.mga3
+description: |
+  It was discovered that libvirt incorrectly handled certain memory stats
+  requests. A remote attacker could use this issue to cause libvirt to
+  crash, resulting in a denial of service (CVE-2013-4296).
+
+  It was discovered that libvirt incorrectly handled certain bitmap
+  operations. A remote attacker could use this issue to cause libvirt to
+  crash, resulting in a denial of service (CVE-2013-5651).
+
+  Additionally, an update for a PolicyKit security issue required libvirt to
+  be updated to use a different API that is not affected by this security
+  issue (CVE-2013-4311).
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11274
