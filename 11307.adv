@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated iscsitarget package fixes module compiling
+src:
+  3:
+   core:
+     - iscsitarget-1.4.20.3-5.2.mga3
+description: |
+  Updated iscsitarget packages fix build against 3.10.12 kernel coming in
+  updates
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11307
