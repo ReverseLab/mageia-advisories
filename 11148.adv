@@ -1,0 +1,18 @@
+type: security
+subject: Updated ssmtp package fixes security vulnerability
+CVE:
+src:
+  2:
+   core:
+     - ssmtp-2.64-5.2.mga2
+  3:
+   core:
+     - ssmtp-2.64-8.2.mga3
+description: |
+  It was reported that ssmtp, an extremely simple MTA to get mail off the system
+  to a mail hub, did not perform x509 certificate validation when initiating a
+  TLS connection to server. A rogue server could use this flaw to conduct man-in-
+  the-middle attack, possibly leading to user credentials leak.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11148
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-August/114906.html
