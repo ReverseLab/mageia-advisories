@@ -1,0 +1,14 @@
+type: bugfix
+subject: Updated lxdm package fixes device ownership
+src:
+  3:
+   core:
+     - lxdm-0.4.1-13.1.mga3
+description: |
+  With using lxdm, device ownership was not handled correctly, due to
+  incorrect pam  session registration (pam_namespace should be before
+  system-auth include).  One effect of this, would be loss of sound
+  after using su to become root, in a terminal, and then closing the
+  terminal.  This update corrects the registration.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=9799
