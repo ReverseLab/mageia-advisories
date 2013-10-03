@@ -1,0 +1,29 @@
+type: bugfix
+subject: Updated lm_sensors package prevents possible hardware breakage
+src:
+  2:
+   core:
+     - lm_sensors-3.3.3-1.mga2
+description: |
+  Quoting http://lm-sensors.org/
+
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  September 5th, 2013:
+  Hardware breakage reported Over the past few months, we had several reports
+  of sensors-detect causing serious trouble on recent hardware (most notably
+  laptops.) We still don't know what exactly is happening, and while it
+  might be reversible, we don't know how, so in practice this is equivalent
+  to the hardware itself being broken. The symptoms are that the display
+  starts misbehaving ( wrong resolution or  wrong gamma factor.) We have
+  mitigated the risk by changing the default behavior of sensors-detect to
+  no longer touch EDID EEPROMs and then to no longer probe graphics adapters
+  at all unless the user asks for it. We urge maintainers to backport
+  changesets r6040 and r6084 to all Linux distributions which are still
+  shipping lm-sensors 3.3.2 or older. Versions 3.3.3 and newer are not
+  affected.
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  To address this issue, lm_sensors 3.3.3 has been backported to Mageia 2
+  from Mageia 3.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11296
