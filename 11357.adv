@@ -1,0 +1,11 @@
+type: bugfix
+subject: Updated gcompris package fixes a crash in the algebra multiplication activity
+src:
+  3:
+   core:
+     - gcompris-12.11-2.1.mga3
+description: |
+  Updated gcompris packages fix a crash in the algebra multiplication
+  activity.
+references:
+ - https://bugs.mageia.org/show_bug.cgi?id=11357
