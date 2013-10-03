@@ -1,0 +1,17 @@
+type: bugfix
+subject: Updated libreoffice package fixes numerous upstream bugs
+src:
+  3:
+   core:
+     - libreoffice-4.0.5.2-1.mga3
+description: |
+  This updates libreoffice from 4.0.4 to 4.0.5, which is a pure bugfix
+  release.
+
+  For more details please see the references.
+references:
+ - http://download.documentfoundation.org/libreoffice/src/bugs-libreoffice-4-0-5-release-4.0.5.1.log
+ - http://download.documentfoundation.org/libreoffice/src/bugs-libreoffice-4-0-5-release-4.0.5.2.log
+ - http://download.documentfoundation.org/libreoffice/src/commits-libreoffice-4-0-5-release-4.0.5.1.log
+ - http://download.documentfoundation.org/libreoffice/src/commits-libreoffice-4-0-5-release-4.0.5.2.log
+ - https://bugs.mageia.org/show_bug.cgi?id=11363
