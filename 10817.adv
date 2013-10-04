@@ -1,0 +1,22 @@
+type: security
+subject: Updated openjpa packages fix CVE-2013-1768
+CVE:
+ - CVE-2013-1768
+src:
+  2:
+   core:
+     - openjpa-2.0.0-1.1.mga2
+  3:
+   core:
+     - openjpa-2.2.0-3.1.mga3
+description: |
+  Updated openjpa packages fix security vulnerability:
+
+  The BrokerFactory functionality in Apache OpenJPA before 2.2.2 creates
+  local executable JSP files containing logging trace data produced during
+  deserialization of certain crafted OpenJPA objects, which makes it easier
+  for remote attackers to execute arbitrary code by creating a serialized
+  object and leveraging improperly secured server programs (CVE-2013-1768).
+references:
+ - https://lists.fedoraproject.org/pipermail/package-announce/2013-July/112029.html
+ - https://bugs.mageia.org/show_bug.cgi?id=10817
